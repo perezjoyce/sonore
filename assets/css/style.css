@@ -39,10 +39,6 @@ body {
 
 
 
-/******* CONTAINERS ********/
-
-
-
 /******* HEADER TOP MOST ********/
 
 #header__top {
@@ -53,13 +49,6 @@ body {
 #header__top > .row {
 	margin: 5vh;
 }
-
-/* RESERED WHEN NAME IS TURNED INTO A LOGO */
-/* #header__top img[alt*="logo"] {
-	width: 60px;
-	height: 60px;
-	display: inline-block;
-} */
 
 #header__top .company--name {
 	font-family: 'Dancing Script', cursive;
@@ -173,10 +162,15 @@ footer__bottom {
 
 
 
+
+/* ====================================CONTACT===================== */
+
+
 /******* CONTACT PAGE ********/
 
 #main__contact {
 	background: rgba(122, 118, 112, 0.678);
+	/* background: rgba(220,220,220, .4); */
 }
 
 .bg--image-1 {
@@ -219,13 +213,13 @@ footer__bottom {
 }
 
 .display-6 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: .1em;
 	color: #2b2b2b;
 }
 
 .heading-small {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 1.2em;
 	letter-spacing: .1em;
@@ -235,6 +229,7 @@ footer__bottom {
 	font-size: 1em;
 	color: #74757f;
 	font-weight: 100;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .emphasize {
@@ -297,6 +292,44 @@ input:active,
 textarea:active {
     border: 1px solid #93291E;
 }
+
+.block {
+	display: block;
+}
+
+.main-text {
+	font-size: 16px;
+	color: #74757f;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+
+}
+
+.bold {
+	font-weight: 900;
+	color: #191919;
+}
+
+.icon-bg {
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+/* ================================SERVICES ===================== */
+
+
+.bg--image-2 {
+	background-image: url(../images/header-2.jpeg);
+	background-size: cover;
+	height: 40vh;
+	position: relative;
+}
+
+
+
+
 
 
 
@@ -418,6 +451,10 @@ textarea {
 		display: block;
 	}
 
+	.wrap {
+		background: rgba(220,220,220, .4);
+	}
+
 }
 
 
@@ -440,6 +477,8 @@ textarea {
 		display: none;
 	}
 
+	/* SERVICES */
+	
 
 
 	/* REUSABLE */
@@ -455,6 +494,12 @@ textarea {
 	.text-small-md {
 		font-size: 12px;
 	}
+
+	.wrap {
+		background: #f2f2f2;
+	}
+
+	
 
 
 }
@@ -518,6 +563,10 @@ textarea {
 
 	.text-small-sm {
 		font-size: 12px;
+	}
+
+	.wrap {
+		background: #f2f2f2;
 	}
 
 
