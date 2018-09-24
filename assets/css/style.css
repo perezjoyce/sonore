@@ -1,5 +1,5 @@
-/******* FOR EDITING / TO BE DELETED ********/
-.container {
+/* ****** FOR EDITING / TO BE DELETED ********/
+/* .container {
 	border: 1px solid red;
 }
 
@@ -17,7 +17,7 @@
 
 #home, #about, #services, #reviews {
 	height: 100vh;
-}
+} */
 
 /******* END OF EDITING AREA ********/
 
@@ -36,16 +36,6 @@ body {
 }
 
 
-/******* REUSEABLE ********/
-.display-6 {
-	font-family: 'Playfair Display', serif;
-}
-
-.gray-text {
-	font-size: 16px;
-	color: #74757f;
-	font-weight: 100;
-}
 
 
 
@@ -82,7 +72,8 @@ body {
 
 
 img[alt*="phone"],
-img[alt*="address"]{
+img[alt*="address"],
+img[alt*="email"] {
 	width: 30px;
 	height: 30px;
 	margin-top: 10px;
@@ -147,6 +138,158 @@ img[alt*="address"]{
 }  
 
 
+/******* FOOTER ********/
+
+footer {
+	background: #2b2b2b;
+	color: #f2f2f2;
+	width: 100%;
+	height: auto;
+	padding: 1em 5em;
+}
+
+footer hr {
+	padding: 0;
+	width: 100%;
+	border: .5px solid rgba(122, 118, 112, 0.678);
+}
+
+footer .company--name {
+	font-family: 'Dancing Script', cursive;
+	color: #f2f2f2;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+footer .heading {
+	color: #74757f;
+}
+
+footer__bottom {
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+
+
+/******* CONTACT PAGE ********/
+
+#main__contact {
+	background: rgba(122, 118, 112, 0.678);
+}
+
+.bg--image-1 {
+	background-image: url(../images/header-1.jpeg);
+	background-size: cover;
+	height: 40vh;
+	position: relative;
+}
+
+#contact {
+	color: #74757f;
+}
+
+
+/* to make Google map responsive */
+#google-map {
+	position: relative;
+	padding-bottom: 75%; 
+	height: 0;
+	overflow: hidden;
+}
+#google-map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+/******* REUSEABLE ********/
+
+.display-4 {
+	font-family: 'Playfair Display', serif;
+	/* letter-spacing: .1em; */
+	color: #141414;
+	vertical-align: bottom;
+}
+
+.display-6 {
+	font-family: 'Playfair Display', serif;
+	letter-spacing: .1em;
+	color: #2b2b2b;
+}
+
+.heading-small {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+}
+
+.gray-text {
+	font-size: 1em;
+	color: #74757f;
+	font-weight: 100;
+}
+
+.small {
+	font-size: 12px;
+}
+
+.link {
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+.link:hover, .link:active, .link:focus {
+	text-decoration: none;
+	color: #93291E;
+}
+
+
+/* .lightbox img {
+	height: 70px;
+	width: 70px;
+	display: inline-block;
+	border-radius: 5%;
+} */
+
+
+.btn--main {
+	background: #93291E;
+	color: #f2f2f2;
+	width: 30%;
+}
+
+
+.bg--content {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+
+
+/***** IMPORTANT ******/
+input,
+textarea,
+select {
+	outline: 0!important;
+	box-shadow: none!important;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus,
+input:active,
+textarea:active {
+    border: 1px solid #93291E;
+}
 
 
 
@@ -216,23 +359,10 @@ img[alt*="address"]{
 	height: 500px;
 }
 
-
-
-
-
-
-/******* FOOTER ********/
-
-
-
-/******* CONTACT PAGE ********/
-
-
-
-iframe {
+/* iframe {
 	width: 100%;
 	height: auto;
-}
+} */
 
 textarea {
 	margin: 0 15px;
@@ -245,47 +375,15 @@ textarea {
 }
 
 
-/*TABLET STYLE**************************/
-
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-
-	/* COLLAPSED NAV */
-	#nav-item__collapse {
-		display: none;
-	} 
-
-
-}
-
-/*MOBILE STYLE**************************/
-
-@media only screen and (max-width: 400px) {
-	
-
-}
 
 
 
 
 
-/******* FOR EDITING / TO BE DELETED ********/
-
-.outer {
-	width: 150px;
-	height: 150px;
-}
-
-.middle {
-	opacity: .3;
-	width: 150px;
-	height: 150px;
-}
 
 
-.outer {
-	border: 1px s
-}
+
+
 /******* FOR EDITING / TO BE DELETED ********/
 
 /******* FOR EDITING / TO BE DELETED ********/
@@ -303,6 +401,16 @@ textarea {
 /************* DESKTOP **************/
 
 @media only screen and (min-width: 961px) {
+
+
+	.vanish-lg {
+		display: none;
+	}
+
+	.appear-lg {
+		display: block;
+	}
+
 }
 
 
@@ -323,6 +431,22 @@ textarea {
 	#header__top .col:nth-child(2),
 	#header__top .col:nth-child(3) {
 		display: none;
+	}
+
+
+
+	/* REUSABLE */
+	
+	.vanish-md {
+		display: none;
+	}
+
+	.appear-md {
+		display: block;
+	}
+
+	.text-small-md {
+		font-size: 12px;
 	}
 
 
@@ -356,16 +480,39 @@ textarea {
 	}
 
 	/* NAV */
-
-	#navbar__expand {
-		display: none;
-	}
-
 	#nav__collapse {
 		display: block;
 	}
 
 	
+	/* FOOTER */
+	footer {
+		padding: 2em;
+	}
+
+	/* MAIN__CONTACT */
+	#main__contact  img[alt*="phone"],
+	#main__contact  img[alt*="email"],
+	#main__contact  img[alt*="address"] {
+		width: 25px;
+		height: 25px;
+		margin-top: 0;
+	}
+
+
+	/* REUSABLE */
+	.vanish-sm {
+		display: none;
+	}
+
+	.appear-sm {
+		display: block;
+	}
+
+	.text-small-sm {
+		font-size: 12px;
+	}
+
 
 
 }
