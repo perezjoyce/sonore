@@ -210,10 +210,12 @@ footer__bottom {
 /******* REUSEABLE ********/
 
 .display-4 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Dancing Script', cursive;
 	/* letter-spacing: .1em; */
 	color: #141414;
 	vertical-align: bottom;
+	text-shadow: 2px 1px  3px white;
+	font-weight: 900;
 }
 
 .display-6 {
@@ -233,6 +235,11 @@ footer__bottom {
 	font-size: 1em;
 	color: #74757f;
 	font-weight: 100;
+}
+
+.emphasize {
+	color: #93291E;
+	text-shadow: 2px 1px  3px white;
 }
 
 .small {
