@@ -175,7 +175,7 @@ nav a.active:after {
     position: absolute;
     display: block;
     background: #f2f2f2;
-    bottom: -7px;
+    bottom: -8px;
     left: 2px;
 }
 
@@ -422,6 +422,25 @@ footer__bottom {
 
 
 	
+/* ======team CARDS */
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 0%!important;
+}
+
+.card-img {
+	border-radius: 0%!important;
+}
+
+.card-footer {
+	background: #93291E;
+	border-radius: 0%!important;
+}
+
+.card-footer img {
+	margin-left: 10px;
+}
 
 
 
@@ -553,9 +572,8 @@ textarea:active {
 }
 
 .icon-bg {
-	width: 30px;
-	height: 30px;
-	margin-top: 10px;
+	width: 40px;
+	height: 40px;
 }
 
 
@@ -721,14 +739,11 @@ textarea {
 	}
 
 	.thumbnail-bg {
-		width: 14em!important;
-		height: 15.5em!important;
+		width: 100%!important;
+		height: 20em!important;
 		position: relative;
-		border-radius: 5%;
 		display: block;
 		margin: 0 auto;
-		padding: 10px;
-		box-shadow: 1px 1px 3px 1px #2d2d2d;
 	} 
 
 
@@ -773,14 +788,11 @@ textarea {
 	}
 
 	.thumbnail-bg {
-		width: 13em!important;
-		height: 13.5em!important;
+		width: 100%!important;
+		height: 20em!important;
 		position: relative;
-		border-radius: 5%;
 		display: block;
 		margin: 0 auto;
-		padding: 10px;
-		box-shadow: 1px 1px 3px 1px #2d2d2d;
 	} 
 
 
@@ -827,7 +839,7 @@ textarea {
 
 /************* MOBILE **************/
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:425px) { 
 
 
 	/* HEADER TOP */
@@ -873,18 +885,6 @@ textarea {
 	
 	/*TEAM*/
 
-	.thumbnail-bg {
-		width: 13em!important;
-		height: 13em!important;
-		position: relative;
-		border-radius: 5%;
-		display: block;
-		margin: 0 auto;
-		padding: 10px;
-		box-shadow: 1px 1px 3px 1px #2d2d2d;
-
-	}
-
 
 	#profile .thumbnail-text {
 		padding: 0 10px;
@@ -895,11 +895,16 @@ textarea {
 		justify-content: center;
 	}
 
-	.thumbnail-text > div {
+
+	.thumbnail-bg {
+		width: 100%!important;
+		height: 20em!important;
+		position: relative;
 		display: block;
 		margin: 0 auto;
-	}
+	} 
 
+	
 
 
 
@@ -917,9 +922,8 @@ textarea {
 		font-size: 12px;
 	}
 
-	.wrap {
-		padding: 2em;
-		background: #f2f2f2;
+	#contact .wrap {
+		margin: 0 .5em;
 	}
 
 	.break-sm {
