@@ -1,5 +1,5 @@
 /* ****** FOR EDITING / TO BE DELETED ********/
-/* .container {
+/*.container {
 	border: 1px solid red;
 }
 
@@ -32,7 +32,7 @@
 body {
 	width: 100%;
 	color: #f2f2f2;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 
@@ -163,6 +163,21 @@ a.animated-button.victoria-three:hover:after {
     left: 2px;
 }
 
+nav a {
+	text-decoration: none;
+    position: relative;
+}
+
+nav a.active:after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background: #f2f2f2;
+    bottom: -7px;
+    left: 2px;
+}
 
 
 
@@ -330,6 +345,7 @@ footer__bottom {
 	height: 0;
 	overflow: hidden;
 }
+
 #google-map iframe {
 	position: absolute;
 	top: 0;
@@ -338,7 +354,7 @@ footer__bottom {
 	height: 100% !important;
 }
 
-/* ================================TEAM ===================== */
+/* ================================CLASSES ===================== */
 
 .bg--image-2 {
 	background-image: url(../images/header-2.jpeg);
@@ -348,7 +364,7 @@ footer__bottom {
 }
 
 
-/* ================================CLASSES ===================== */
+/* ================================TEAM ===================== */
 
 
 .bg--image-3 {
@@ -365,6 +381,47 @@ footer__bottom {
 	position: relative;
 }
 
+.coach-2 {
+	background: url(../images/coach-2.jpeg);
+	background-size: cover;
+	position: relative;
+}
+
+.coach-3 {
+	background: url(../images/coach-3.jpeg);
+	background-size: cover;
+	position: relative;
+}
+
+.coach-4 {
+	background: url(../images/coach-4.jpeg);
+	background-size: cover;
+	position: relative;
+}
+
+.coach-5 {
+	background: url(../images/coach-5.jpeg);
+	background-size: cover;
+	position: relative;
+}
+
+.coach-6 {
+	background: url(../images/coach-6.jpeg);
+	background-size: cover;
+	position: relative;
+}
+
+
+.thumbnail-bg:hover {
+	opacity: .8;
+	animation-duration: 2s;
+	animation-delay: 0s;
+}
+
+
+
+
+	
 
 
 
@@ -383,13 +440,13 @@ footer__bottom {
 }
 
 .display-6 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	letter-spacing: .1em;
 	color: #2b2b2b;
 }
 
 .heading-small {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: 1.2em;
 	letter-spacing: .1em;
@@ -397,7 +454,7 @@ footer__bottom {
 
 .gray-text {
 	font-size: 1em;
-	color: #74757f;
+	color: #696969;
 	font-weight: 100;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -409,7 +466,9 @@ footer__bottom {
 
 .small {
 	font-size: 12px;
+	font-weight: 600;
 }
+
 
 .link {
 	text-decoration: none;
@@ -450,6 +509,9 @@ footer__bottom {
 }
 
 
+.text-small {
+	font-size: 13px!important;
+}
 
 
 
@@ -478,9 +540,9 @@ textarea:active {
 
 .main-text {
 	font-size: 16px;
-	color: #74757f;
-	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	color: #191919;
+	font-weight: 200;
+	font-family: 'Lato', sans-serif;
 	display: block;
 
 }
@@ -497,13 +559,7 @@ textarea:active {
 }
 
 
-.thumbnail-bg {
-	width: 10em!important;
-	height: 10em!important;
-	position: relative;
-	border-radius: 5%;
-	
-} 
+
 
 
 
@@ -607,10 +663,6 @@ textarea {
 
 
 
-
-
-
-
 /******* FOR EDITING / TO BE DELETED ********/
 
 /******* FOR EDITING / TO BE DELETED ********/
@@ -651,6 +703,38 @@ textarea {
 		margin-top: 2.5em;
 	}
 
+	.text-small-lg {
+		font-size: 12px;
+	}
+
+
+
+	/*TEAM*/
+
+	#profile .thumbnail-text {
+		padding: 0 10px;
+		font-size: 14px;
+	}
+
+	#profile .center-sm {
+		padding: 0 10px;
+	}
+
+	.thumbnail-bg {
+		width: 14em!important;
+		height: 15.5em!important;
+		position: relative;
+		border-radius: 5%;
+		display: block;
+		margin: 0 auto;
+		padding: 10px;
+		box-shadow: 1px 1px 3px 1px #2d2d2d;
+	} 
+
+
+	
+
+
 }
 
 
@@ -673,6 +757,34 @@ textarea {
 		display: none;
 	}
 
+	/*TEAM*/
+
+	#profile {
+		padding: 0 4em;
+	}
+
+	#profile .thumbnail-text {
+		padding: 0 17px;
+		font-size: 14px;
+	}
+
+	#profile .center-sm {
+		padding: 0 17px;
+	}
+
+	.thumbnail-bg {
+		width: 13em!important;
+		height: 13.5em!important;
+		position: relative;
+		border-radius: 5%;
+		display: block;
+		margin: 0 auto;
+		padding: 10px;
+		box-shadow: 1px 1px 3px 1px #2d2d2d;
+	} 
+
+
+	
 	
 	
 
@@ -759,7 +871,38 @@ textarea {
 	}
 
 	
-	
+	/*TEAM*/
+
+	.thumbnail-bg {
+		width: 13em!important;
+		height: 13em!important;
+		position: relative;
+		border-radius: 5%;
+		display: block;
+		margin: 0 auto;
+		padding: 10px;
+		box-shadow: 1px 1px 3px 1px #2d2d2d;
+
+	}
+
+
+	#profile .thumbnail-text {
+		padding: 0 10px;
+		text-align: center;
+	}
+
+	#profile .center-sm {
+		justify-content: center;
+	}
+
+	.thumbnail-text > div {
+		display: block;
+		margin: 0 auto;
+	}
+
+
+
+
 
 	/* REUSABLE */
 	.vanish-sm {
@@ -792,7 +935,8 @@ textarea {
 		text-align: center;
 	}
 
-	
+
+
 
 }
 
