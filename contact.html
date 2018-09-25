@@ -58,20 +58,26 @@
 							</div>
 						</div>
 	
-							<div class="col col-lg-3">
-								<div class="row">
-									<div class="col-2">
-										<img src="assets/images/location.png" alt="address">
-									</div>
-									<div class="col-10 pb-0 gray-text">
-										<div>123 Ayala, Tower One</div>
-										<div>Makati City, Philippines</div>
-									</div>
+						<div class="col col-lg-3">
+							<div class="row">
+								<div class="col-2">
+									<img src="assets/images/location.png" alt="address">
+								</div>
+								<div class="col-10 pb-0 gray-text">
+									<div>123 Ayala, Tower One</div>
+									<div>Makati City, PH</div>
 								</div>
 							</div>
+						</div>
 
 						<div class="col col-lg-3 col-md-5 col-sm-12 text-center">
-							<button class="btn font-weight-heavy">BOOK A LESSON</button>
+							<div class="row" id="header-button">
+								<div class="col-2"></div>
+								<div class="col-8">
+									<a class="btn font-weight-heavy animated-button victoria-three" href="#">BOOK A LESSON</a>
+								</div>
+								<div class="col-2"></div>
+							</div>
 						</div>
 
 				
@@ -90,7 +96,7 @@
 		<div class="collapse navbar-collapse">
 			<div class="navbar-nav ml-auto">
 				<a class="nav-item nav-link active" href="home.html">HOME</a>
-				<a class="nav-item nav-link" href="services.html">SERVICES</a>
+				<a class="nav-item nav-link" href="classes.html">CLASSES</a>
 				<a class="nav-item nav-link" href="team.html">TEAM</a>
 				<a class="nav-item nav-link" href="testimonial.html">TESTIMONIALS</a>
 				<a class="nav-item nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
@@ -102,8 +108,8 @@
 			<a class="nav-item__collapse" href="home.html">
 				<span class="sr-only">(current)</span>
 				<img src="assets/images/home-white.png" alt="home"></a>
-			<a class="nav-item__collapse" href="services.html">
-				<img src="assets/images/clef-white.png" alt="services">
+			<a class="nav-item__collapse" href="classes.html">
+				<img src="assets/images/clef-white.png" alt="classes">
 			</a>
 			<a class="nav-item__collapse" href="team.html">
 				<img src="assets/images/team-white.png" alt="team">
@@ -199,10 +205,12 @@
 					</div>
 
 					<!-- BUTTONS -->
-					<div class="row justify-content-center mb-4">
-						<button class="btn btn--main">
-							SEND
-						</button>
+					<div class="row" id="contact-button mb-4">
+						<!-- <div class="col-lg-1"></div> -->
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<a class="btn font-weight-heavy animated-button victoria-three--submit" href="#">SEND</a>
+						</div>
+						<!-- <div class="col-lg-1"></div>	 -->
 					</div>
 
 				</div>
@@ -210,8 +218,8 @@
 
 				<!-- CONTACT FORM -->
 				<div class="col-lg-6 col-md-12 col-sm-12">
-					<div class="map display-block mb-0" id="google-map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7458125333474!2d121.02012231491605!3d14.556523189830555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9058bb670b5%3A0xf815eba9b0abaa3!2sAyala+Tower+One%2C+Ayala+Ave%2C+Makati%2C+Metro+Manila!5e0!3m2!1sen!2sph!4v1537800104415" width="100%" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="map display-block mb-0 mt-5-md mt-5-sm" id="google-map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7458125333474!2d121.02012231491605!3d14.556523189830555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9058bb670b5%3A0xf815eba9b0abaa3!2sAyala+Tower+One%2C+Ayala+Ave%2C+Makati%2C+Metro+Manila!5e0!3m2!1sen!2sph!4v1537800104415" width="100%" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 
@@ -240,7 +248,7 @@
 			
 
 			<div class="col-lg-5 col-md-6 col-sm-12">
-				<div class="text-center mb-4 heading-small">Follow Us</div>
+				<div class="text-center mb-4 heading-small vanish-sm">Follow Us</div>
 				<div class="text-center mb-3">
 						<i class="fab fa-facebook-square fa-2x mr-3"></i>
 						<i class="fab fa-twitter fa-2x"></i>

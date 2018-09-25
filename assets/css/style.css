@@ -1,5 +1,5 @@
 /* ****** FOR EDITING / TO BE DELETED ********/
-/* .container {
+.container {
 	border: 1px solid red;
 }
 
@@ -15,9 +15,9 @@
 	border-radius: 1px solid yellow;
 }
 
-#home, #about, #services, #reviews {
+#home, #about, #classes, #reviews {
 	height: 100vh;
-} */
+}
 
 /******* END OF EDITING AREA ********/
 
@@ -36,6 +36,135 @@ body {
 }
 
 
+/* Animated buttons */
+
+/* Global Button Styles */
+a.animated-button {
+	background: transparent;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	width: 100%;
+	height: 100%;;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	font-size:14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: inherit;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover, a.animated-button:visited:active,
+a.animated-button:visited:focus {
+	text-shadow: none;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+	outline: none!important;
+	color: #fff;
+	background: #93291E;
+}
+
+.btn.focus, .btn:focus {
+	outline: 0;
+    box-shadow: none;
+}
+
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	color: #f2f2f2;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	outline: none;
+}
+
+a.animated-button.victoria-three {
+	border: 1px solid #93291E;
+	min-width: 180px;
+}
+
+a.animated-button.victoria-three--submit {
+	background: #93291E;
+	color: #f2f2f2;
+	/* min-width: 180px; */
+}
+a.animated-button.victoria-three:after {
+	background: #fff;
+	color: #93291E;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+a.animated-button.victoria-three--submit:after {
+	background: #93291E;
+	color: #fff;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+a.animated-button.victoria-three:hover:after {
+	height: 140%;
+	opacity: 1;
+}
+
+/* navbar style */
+.navbar-nav a.nav-item { position: relative;}
+.navbar-nav a.nav-item:hover {
+	color: #93291E;
+}
+.navbar-nav a.nav-item:hover:after {
+	content: " ";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    background: #93291E;
+    bottom: -9px;
+    left: 2px;
+}
+
+
+
 
 
 
@@ -44,6 +173,7 @@ body {
 #header__top {
 	width: 100%;
 	height: 15vh;
+	position: relative;
 }
 
 #header__top > .row {
@@ -69,18 +199,22 @@ img[alt*="email"] {
 }
 
 
-#header__top button {
-	margin:	2.5vh;
-	padding: 5px 20px;
-	background: transparent;
-	border: 1px solid #191919;
-}
+#header-button {
+	margin:	2.5vh 0;
+	/* padding: 5px 20px; */
+	/* background: transparent;
+	border: 1px solid #191919; */
+} 
 
 
 #header__top .col:nth-child(2),
 #header__top .col:nth-child(3) {
 	margin-top: 10px;
 }
+
+
+
+
 
 
 /******* NAV ********/
@@ -184,6 +318,10 @@ footer__bottom {
 	color: #74757f;
 }
 
+#contact-button {
+	margin:	2.5vh 0;
+}
+
 
 /* to make Google map responsive */
 #google-map {
@@ -201,7 +339,31 @@ footer__bottom {
 }
 
 
-/******* REUSEABLE ********/
+
+
+/* ================================CLASSES ===================== */
+
+
+.bg--image-2 {
+	background-image: url(../images/header-3.jpeg);
+	background-size: cover;
+	height: 40vh;
+	position: relative;
+}
+
+.coach-1 {
+	background: url(../images/coach-1.jpeg);
+	background-size: cover;
+	position: relative;
+}
+
+
+
+
+
+
+
+/* ================================REUSABLE===================== */
 
 .display-4 {
 	font-family: 'Dancing Script', cursive;
@@ -251,6 +413,10 @@ footer__bottom {
 	color: #93291E;
 }
 
+.red {
+	color: #93291E!important;
+}
+
 
 /* .lightbox img {
 	height: 70px;
@@ -260,11 +426,11 @@ footer__bottom {
 } */
 
 
-.btn--main {
+/* .btn--main {
 	background: #93291E;
 	color: #f2f2f2;
 	width: 30%;
-}
+} */
 
 
 .bg--content {
@@ -274,6 +440,11 @@ footer__bottom {
 	transform: translate(-50%, -50%);
 	opacity: 1;
 }
+
+
+
+
+
 
 
 /***** IMPORTANT ******/
@@ -317,18 +488,13 @@ textarea:active {
 	margin-top: 10px;
 }
 
-/* ================================SERVICES ===================== */
 
-
-.bg--image-2 {
-	background-image: url(../images/header-2.jpeg);
-	background-size: cover;
-	height: 40vh;
+.thumbnail-bg {
+	width: 10em!important;
+	height: 10em!important;
 	position: relative;
-}
-
-
-
+	
+} 
 
 
 
@@ -408,11 +574,23 @@ textarea {
 	margin: 0 15px;
 }
 
+.form-control:focus {
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
 #file {
 	display: none;
 	visibility: hidden;
 	position: absolute;
 }
+
+
 
 
 
@@ -453,6 +631,15 @@ textarea {
 
 	.wrap {
 		background: rgba(220,220,220, .4);
+		display: block;
+	}
+
+	.break-lg {
+		display: block;
+	}
+
+	.mt-5-lg {
+		margin-top: 2.5em;
 	}
 
 }
@@ -477,7 +664,7 @@ textarea {
 		display: none;
 	}
 
-	/* SERVICES */
+	
 	
 
 
@@ -499,7 +686,18 @@ textarea {
 		background: #f2f2f2;
 	}
 
-	
+	.break-md {
+		display: block;
+	}
+
+	.display-4 {
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	.mt-5-md {
+		margin-top: 2.5em;
+	}
 
 
 }
@@ -551,6 +749,8 @@ textarea {
 		margin-top: 0;
 	}
 
+	
+	
 
 	/* REUSABLE */
 	.vanish-sm {
@@ -566,9 +766,24 @@ textarea {
 	}
 
 	.wrap {
+		padding: 2em;
 		background: #f2f2f2;
 	}
 
+	.break-sm {
+		display: block;
+	}
 
+	.mt-5-sm {
+		margin-top: 2.5em;
+	}
+
+	.display-4 {
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	
 
 }
+
