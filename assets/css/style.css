@@ -86,7 +86,7 @@ a.animated-button:visited:focus {
 	box-shadow: none!important;
 	outline: none!important;
 	color: #fff;
-	background: linear-gradient(to bottom, #a30303, #7a0909);
+	background: linear-gradient(to bottom, #a30303, #93291E);
 	/* border: 1px solid #e70707; */
 }
 
@@ -122,7 +122,7 @@ a.animated-button.victoria-three {
 }
 
 a.animated-button.victoria-three--submit {
-	background: linear-gradient(to bottom, #a30303, #7a0909);
+	background: linear-gradient(to bottom, #a30303, #93291E);
 	color: #f2f2f2;
 	/* min-width: 180px; */
 }
@@ -405,6 +405,60 @@ footer__bottom {
 	position: relative;
 }
 
+#schedule {
+	margin-top: 6em;
+}
+
+.table__heading {
+	background-color: #424242;
+	color: white;
+}
+
+
+.table__body {
+	background: #fff;
+}
+
+.table {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.table a {
+	color: #7a0909;
+	font-weight: 700;
+}
+
+
+
+/* TESTOMINIAL */
+
+
+.carousel-1 {
+	background: url(../images/coach-7.jpeg);
+	background-size: cover;
+	width: 100%;	
+	height: 20em;
+}
+
+.carousel-2 {
+	background: url(../images/coach-7.jpeg);
+	background-size: cover;
+	width: 100%;	
+	height: 20em;
+}
+
+.carousel-3 {
+	background: url(../images/coach-7.jpeg);
+	background-size: cover;
+	width: 100%;	
+	height: 20em;
+}
+
+
+
+
+
+
 
 /* ================================TEAM ===================== */
 
@@ -453,10 +507,6 @@ footer__bottom {
 	background-size: cover;
 	position: relative;
 }
-
-
-
-
 
 
 
@@ -1010,6 +1060,11 @@ textarea {
 		margin: 0 3px;
 	}
 
+	#nav__collapse a{
+		padding: 16px 6px 7px;
+	}
+	
+
 	nav a.active:after {
 		content: '';
 		height: 3px;
@@ -1042,7 +1097,7 @@ textarea {
 
 
 	#profile .thumbnail-text {
-		padding: 0 10px;
+		padding: 0 5px;
 		text-align: center;
 	}
 
