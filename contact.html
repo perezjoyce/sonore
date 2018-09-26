@@ -92,19 +92,28 @@
 
 	<!-- NAV -->
 
-	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top" id="navbar__expand">
+	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top vanish-sm" id="navbar__expand">
 		<div class="collapse navbar-collapse">
 			<div class="navbar-nav ml-auto">
-				<a class="nav-item nav-link" href="home.html">HOME</a>
-				<a class="nav-item nav-link" href="classes.html">CLASSES</a>
-				<a class="nav-item nav-link" href="team.html">TEAM</a>
-				<a class="nav-item nav-link" href="testimonial.html">TESTIMONIALS</a>
-				<a class="nav-item nav-link active" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
+				<ul>
+					<li><a class="nav-item nav-link" href="home.html">HOME</a></li>
+					<li><a class="nav-item nav-link" href="team.html">TEAM</a></li>
+					<li class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> CLASSES</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+`					<li><a class="nav-item nav-link" href="testimonial.html">TESTIMONIALS</a></li>
+					<li><a class="nav-item nav-link active" href="contact.html">CONTACT</a></li>
+				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<nav class="navbar sticy-top" id="nav__collapse">
+	<nav class="navbar sticky-top" id="nav__collapse">
 			<a class="nav-item__collapse" href="home.html">
 				<img src="assets/images/home-white.png" alt="home"></a>
 			<a class="nav-item__collapse" href="classes.html">
@@ -143,33 +152,38 @@
 
 
 		<!-- TOP OF FOOTER -->
-		<section class="container-fluid vanish-lg" id="main__contact">
-		
-			<div class="row py-3 text-small-sm text-small-md">
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<div class="text-center text-dark mb-3">
-						<img src="assets/images/phone.png" alt="phone" class="mb-3">
-						<div>1-234-567-890</div>
-						<div class="vanish-lg vanish-md appear-sm">sonore@gmail.com</div>	
-					</div>
-				</div>
-					
-		
-				<div class="col-lg-4 col-md-4">
-					<div class="text-center text-dark mb-3 vanish-sm">
-						<img src="assets/images/email-black.png" alt="email" class="mb-3">
-						<div>sonore@gmail.com</div>		
-					</div>
-				</div>
+		<section class="container-fluid py-4 mb-0 mx-0 vanish-lg" id="main__contact">
+			<div class="row">
+				<div class="col-md-1 vanish-sm"></div>
+				<div class="col-md-10 col-sm-12">
+					<div class="row">
+						<div class="col col-md-6">
+							<div class="row justify-content-center">
+								<div class="col-2 pr-0">
+									<img src="assets/images/phone.png" alt="phone">
+								</div>
+								<div class="col-10 pb-0 gray-text text-small-md text-smaller-sm center-sm">
+									<div>1-234-567-890</div>
+									<div>sonore@gmail.com</div>
+								</div>
+							</div>
+						</div>
 
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<div class="text-center text-dark">
-						<img src="assets/images/location.png" alt="address" class="mb-3">
-						<div>123 Ayala, Tower One, Makati City, PH</div>
+						<div class="col col-md-6">
+							<div class="row justify-content-center">
+								<div class="col-2 pl-0">
+									<img src="assets/images/location.png" alt="address">
+								</div>
+								<div class="col-10 pb-0 gray-text text-small-md text-smaller-sm center-sm">
+									<div>123 Ayala, Tower 1</div>
+									<div>Makati City, PH</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>	
+				</div>
+				<div class="col-md-1 vanish-sm"></div>
 				
-					
 			</div>
 		</section>
 		<!-- END OF TOP OF FOOTER -->
@@ -239,7 +253,7 @@
 
 			<div class="col-lg-5 col-md-6 col-sm-12">
 				<div class="text-center mb-4 heading-small">About Us</div>
-				<p class="text-left gray-text text-center text-small-md text-small-sm">Sonore was founded in 2015 to 
+				<p class="text-center gray-text text-small-lg text-smaller-md text-smaller-sm">Sonore was founded in 2015 to 
 				help Filipinos of all ages pursue their passion for music. 
 				We can train you to play any musical instrument without breaking the bank!</p>
 			</div>

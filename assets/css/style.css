@@ -1,5 +1,5 @@
 /* ****** FOR EDITING / TO BE DELETED ********/
-/*.container {
+/* .container {
 	border: 1px solid red;
 }
 
@@ -43,7 +43,7 @@ html, body, header, main, contact {
 
 /* Global Button Styles */
 a.animated-button {
-	background: transparent;
+	background: linear-gradient(to bottom, #a30303, #7a0909);
 }
 
 a.animated-button:link, a.animated-button:visited {
@@ -86,7 +86,8 @@ a.animated-button:visited:focus {
 	box-shadow: none!important;
 	outline: none!important;
 	color: #fff;
-	background: #93291E;
+	background: linear-gradient(to bottom, #a30303, #7a0909);
+	/* border: 1px solid #e70707; */
 }
 
 .btn.focus, .btn:focus {
@@ -115,12 +116,13 @@ a.animated-button:link, a.animated-button:visited {
 }
 
 a.animated-button.victoria-three {
-	border: 1px solid #93291E;
+	/* border: 1px solid #424242; */
 	min-width: 180px;
+	border: 0;
 }
 
 a.animated-button.victoria-three--submit {
-	background: #93291E;
+	background: linear-gradient(to bottom, #a30303, #7a0909);
 	color: #f2f2f2;
 	/* min-width: 180px; */
 }
@@ -135,13 +137,14 @@ a.animated-button.victoria-three:after {
 }
 
 a.animated-button.victoria-three--submit:after {
-	background: #93291E;
+	/* background: #93291E; */
 	color: #fff;
 	opacity: .5;
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
+	border: 0;
 }
 
 
@@ -151,6 +154,9 @@ a.animated-button.victoria-three:hover:after {
 }
 
 /* navbar style */
+#navbar__expand ul li a {
+	color: #f2f2f2;
+}
 .navbar-nav a.nav-item { position: relative;}
 .navbar-nav a.nav-item:hover {
 	color: #93291E;
@@ -162,8 +168,9 @@ a.animated-button.victoria-three:hover:after {
     position: absolute;
     display: block;
     background: #93291E;
-    bottom: -9px;
-    left: 2px;
+    bottom: -8px;
+	left: 2px;
+	border: 0;
 }
 
 nav a {
@@ -171,16 +178,41 @@ nav a {
     position: relative;
 }
 
-nav a.active:after {
-    content: '';
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    display: block;
-    background: #f2f2f2;
-    bottom: -8px;
-    left: 2px;
+.navbar ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
 }
+
+.navbar ul li {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
+}
+
+.navbar ul li .dropdown-menu {
+	background: #2b2b2b;
+    top: 116%;
+    border-radius: 0;
+    left: 6px;
+	z-index: -1;
+	margin-top: 0;
+}
+
+.navbar ul li .dropdown-menu .dropdown-item{
+	background: #2b2b2b;
+}
+
+.navbar ul li .dropdown-menu .dropdown-item:hover{
+	background: #424242;
+}
+
+
 
 
 
@@ -218,7 +250,7 @@ img[alt*="email"] {
 
 
 #header-button {
-	margin:	2.5vh 0;
+	margin:	2vh 0;
 	/* padding: 5px 20px; */
 	/* background: transparent;
 	border: 1px solid #191919; */
@@ -230,7 +262,9 @@ img[alt*="email"] {
 	margin-top: 10px;
 }
 
-
+.btn {
+	padding: .7em;
+}
 
 
 
@@ -259,15 +293,20 @@ img[alt*="email"] {
 }
 
 #nav__collapse a {
-	display: inline-block;
-	margin: 0 10px;
-	text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+	padding: 16px 8px 8px;
+	color: #fff;
 }
 
 #nav__collapse img {
 	width: 30px;
 	height: 30px;
-	padding: 5px;
+}
+
+.nav-item__collapse {
+	margin: 0 3em;
 }
 
 #nav__collapse img:focus {
@@ -746,7 +785,42 @@ textarea {
 
 @media only screen and (min-width: 961px) {
 
+	
 
+	/* NAV */
+	nav a.active:after {
+		content: '';
+		height: 3px;
+		width: 100%;
+		position: absolute;
+		display: block;
+		background: #f2f2f2;
+		bottom: -8px;
+		left: 2px;
+		border: 0;
+	}
+
+	/*TEAM*/
+
+	#profile .thumbnail-text {
+		padding: 0 10px;
+		font-size: 14px;
+	}
+
+	#profile .center-sm {
+		padding: 0 10px;
+	}
+
+	.thumbnail-bg {
+		width: 100%!important;
+		height: 20em!important;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+	} 
+
+
+	/* REUSABLE */
 	.vanish-lg {
 		display: none;
 	}
@@ -769,30 +843,8 @@ textarea {
 	}
 
 	.text-small-lg {
-		font-size: 12px;
-	}
-
-
-
-	/*TEAM*/
-
-	#profile .thumbnail-text {
-		padding: 0 10px;
 		font-size: 14px;
 	}
-
-	#profile .center-sm {
-		padding: 0 10px;
-	}
-
-	.thumbnail-bg {
-		width: 100%!important;
-		height: 20em!important;
-		position: relative;
-		display: block;
-		margin: 0 auto;
-	} 
-
 
 	
 
@@ -802,7 +854,29 @@ textarea {
 
 /************* TABLET **************/
 
-@media only screen and (min-width:426px) and (max-width:960px) {
+@media only screen and (min-width:426px) and (max-width:960px) { 
+
+	/* NAVBAR */
+
+	.navbar-nav {
+		padding: 0;
+	}
+
+	nav a.active:after {
+		content: '';
+		height: 3px;
+		width: 100%;
+		position: absolute;
+		display: block;
+		background: #f2f2f2;
+		bottom: -8px;
+		left: 2px;
+		border: 0;
+	}
+
+	#header-button {
+		margin:	15px 0;
+	}
 
 	/* HEADER */
 	#header__top {
@@ -843,6 +917,15 @@ textarea {
 	} 
 
 
+	/* MAIN__CONTACT */
+		#main__contact  img[alt*="phone"],
+		#main__contact  img[alt*="email"],
+		#main__contact  img[alt*="address"] {
+			width: 30px;
+			height: 30px;
+			margin-top: 0;
+	}
+
 	
 	
 	
@@ -859,7 +942,11 @@ textarea {
 	}
 
 	.text-small-md {
-		font-size: 12px;
+		font-size: 14px;
+	}
+
+	.text-smaller-md {
+		font-size: 13px;
 	}
 
 	.wrap {
@@ -909,9 +996,30 @@ textarea {
 		display: none;
 	}
 
+	#header-button {
+		margin:	15px 0;
+	}
+
 	/* NAV */
 	#nav__collapse {
 		display: block;
+		padding-top: 0;
+	}
+
+	.nav-item__collapse > img {
+		margin: 0 3px;
+	}
+
+	nav a.active:after {
+		content: '';
+		height: 3px;
+		width: 100%;
+		position: absolute;
+		display: block;
+		background: #f2f2f2;
+		bottom: -5px;
+		left: 2px;
+		border: 0;
 	}
 
 	
@@ -924,8 +1032,8 @@ textarea {
 	#main__contact  img[alt*="phone"],
 	#main__contact  img[alt*="email"],
 	#main__contact  img[alt*="address"] {
-		width: 25px;
-		height: 25px;
+		width: 27px;
+		height: 27px;
 		margin-top: 0;
 	}
 
@@ -951,9 +1059,9 @@ textarea {
 		margin: 0 auto;
 	} 
 
+
+	/* MAIN CONTACT */
 	
-
-
 
 
 	/* REUSABLE */
@@ -967,6 +1075,10 @@ textarea {
 
 	.text-small-sm {
 		font-size: 12px;
+	}
+
+	.text-smaller-sm {
+		font-size: 11px;
 	}
 
 	#contact .wrap {
@@ -983,6 +1095,10 @@ textarea {
 
 	.display-4 {
 		font-size: 2.5em;
+		text-align: center;
+	}
+
+	.center-sm {
 		text-align: center;
 	}
 

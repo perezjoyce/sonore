@@ -92,20 +92,45 @@
 
 	<!-- NAV -->
 
-	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top" id="navbar__expand">
+	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top vanish-sm" id="navbar__expand">
 		<div class="collapse navbar-collapse">
 			<div class="navbar-nav ml-auto">
-				<a class="nav-item nav-link" href="home.html">HOME</a>
-				<a class="nav-item nav-link active" href="classes.html">CLASSES</a>
-				<a class="nav-item nav-link" href="team.html">TEAM</a>
-				<a class="nav-item nav-link" href="testimonial.html">TESTIMONIALS</a>
-				<a class="nav-item nav-link" href="contact.html">CONTACT</a>
+				<ul>
+					<li><a class="nav-item nav-link" href="home.html">HOME</a></li>
+					<li><a class="nav-item nav-link" href="team.html">TEAM</a></li>
+					<li class="dropdown">
+						<a class="nav-item nav-link active dropdown-toggle" data-toggle="dropdown" href="#"> CLASSES</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+`					<li><a class="nav-item nav-link" href="testimonial.html">TESTIMONIALS</a></li>
+					<li><a class="nav-item nav-link" href="contact.html">CONTACT</a></li>
+				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<nav class="navbar sticy-top" id="nav__collapse">
-			<a class="nav-item__collapse" href="home.html">
+	<nav class="navbar sticky-top" id="nav__collapse">
+
+			<ul>
+				<li><a class="nav-item nav-link" href="home.html"><img src="assets/images/home-white.png" alt="home"></a></a></li>
+				<li><a class="nav-item nav-link" href="team.html"><img src="assets/images/team-white.png" alt="team"></a></li>
+				<li class="dropdown">
+					<a class="nav-item nav-link active dropdown-toggle" data-toggle="dropdown" href="#"><img src="assets/images/clef-white.png" alt="classes"></a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+`					<li><a class="nav-item nav-link" href="testimonial.html"><img src="assets/images/star-white.png" alt="reviews"></a></li>
+				<li><a class="nav-item nav-link" href="contact.html"><img src="assets/images/phone-white.png" alt="contact"></a></li>
+			</ul>
+
+			<!-- <a class="nav-item__collapse" href="home.html">
 				<img src="assets/images/home-white.png" alt="home"></a>
 			<a class="nav-item__collapse" href="classes.html">
 				<img src="assets/images/clef-white.png" alt="classes">
@@ -118,7 +143,7 @@
 			</a>
 			<a class="nav-item__collapse" href="contact.html">
 				<img src="assets/images/phone-white.png" alt="contact">
-			</a>
+			</a> -->
 		</div>
 	</nav>
 
