@@ -430,6 +430,8 @@ footer__bottom {
 
 
 
+
+
 /* TESTOMINIAL */
 
 
@@ -455,6 +457,16 @@ footer__bottom {
 }
 
 
+/* ================================VOICE===================== */
+
+/*VOICE*/
+.bg--image-3 {
+	background-image: url(../images/voice-6.jpeg);
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+	background-position-y: center;
+}
 
 
 
@@ -462,15 +474,6 @@ footer__bottom {
 
 /* ================================TEAM ===================== */
 
-
-.bg--image-3 {
-	background-image: url(../images/header-7.jpeg);
-	background-size: cover;
-	height: 50vh;
-	position: relative;
-	background-position-y: center;
-
-}
 
 .coach-1 {
 	background: url(../images/coach-1.jpeg);
@@ -580,8 +583,38 @@ footer__bottom {
 
 
 
+/*================================ FAQS================================ */
 
+/*faqs*/
+.bg--image-4 {
+	background-image: url(../images/header-7.jpeg);
+	background-size: cover;
+	height: 40vh;
+	position: relative;
+}
 
+#accordion {
+	padding-top: 5em;
+}
+
+#accordion .btn {
+	text-decoration: none!important;
+	color: #93291E!important;
+
+}
+
+#accordion .btn:active {
+	color: white!important;
+	text-decoration: none!important;
+}
+
+#accordion .card-header, #accordion .card-body {
+	border-color: .5 solid slategray;
+}
+
+#accordion .card-body {
+	padding-left: 5em;
+}
 
 /* ================================REUSABLE===================== */
 
@@ -870,6 +903,14 @@ textarea {
 	} 
 
 
+	/*ACCORDION*/
+	#accordion .btn {
+	    font-size: large;
+	    color: white!important;
+	    text-decoration: none!important;
+	}
+
+
 	/* REUSABLE */
 	.vanish-lg {
 		display: none;
@@ -1063,6 +1104,7 @@ textarea {
 	#nav__collapse a{
 		padding: 16px 6px 7px;
 	}
+
 	
 
 	nav a.active:after {
