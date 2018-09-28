@@ -64,3 +64,27 @@ for (var i = 0; i < btns.length; i++) {
 $('.carousel').carousel({
   interval: 7000
     })
+
+
+//popover
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+$('#example').popover(options)
+
+$(function () {
+  $('.example-popover').popover({
+    container: 'body'
+  })
+})
+
+// MODAL
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+
+
+// HOME
+

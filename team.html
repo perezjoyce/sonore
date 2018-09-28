@@ -45,131 +45,133 @@
 </head>
 <body>
 
-	<header class="container-fluid" id="header__top">
+	<div class="container-fluid sticky-top mb-5" id="wrap--home">
+		<div class="row">
+			<div class="col-12">
 
-				<div class="row">
-
-						<div class="col col-lg-3 col-md-7 col-sm-12 text-center">
-							<!-- <div class="compay--logo">
-								<img src="assets/images/logo2.png" alt="logo"> -->
+				<div class="row top-of-nav">
+					<header class="container-fluid">
+						<div class="row">
+							<div class="col col-lg-3 col-md-7 col-sm-12 text-center">
 								<div class="company--name">
 								Sonore
 								</div>
-							<!-- </div> -->
-						</div>
-						
-						<div class="col col-lg-3">
-							<div class="row">
-								<div class="col-2">
-									<img src="assets/images/phone.png" alt="phone">
-								</div>
-								<div class="col-10 pb-0 gray-text">
-									<div>1-234-567-890</div>
-									<div>sonore@gmail.com</div>
-								</div>
 							</div>
-						</div>
-	
-							<div class="col col-lg-3">
-								<div class="row">
-									<div class="col-2">
-										<img src="assets/images/location.png" alt="address">
-									</div>
-									<div class="col-10 pb-0 gray-text">
-										<div>123 Ayala, Tower One</div>
-										<div>Makati City, PH</div>
+
+										
+							<div class="col col-lg-3 vanish-md vanish-sm">
+								<img src="assets/images/phone.png" alt="phone">
+								<div class="gray-text">1-234-567-890</div>
+								<div class="gray-text">sonore@gmail.com</div>
+							</div>
+					
+							<div class="col col-lg-3 vanish-md vanish-sm">
+								<img src="assets/images/location.png" alt="address">
+								<div class="gray-text">123 Ayala, Tower One</div>
+								<div class="gray-text">Makati City, PH</div>		
+							</div>
+
+							<div class="col col-lg-3 col-md-5 col-sm-12 text-center">
+								<div class="containter">
+									<div class="row my-3">
+										<div class="col-2"></div>
+										<div class="col-8">
+											<a class="btn font-weight-heavy animated-button victoria-three" id="button" href="#" onClick="scrollToBottom()">
+												BOOK A LESSON
+											</a>
+										</div>
+										<div class="col-2"></div>
 									</div>
 								</div>
 							</div>
 
-						<div class="col col-lg-3 col-md-5 col-sm-12 text-center">
-							<div class="row" id="header-button">
-								<div class="col-2"></div>
-								<div class="col-8">
-									<a class="btn font-weight-heavy animated-button victoria-three" href="#">BOOK A LESSON</a>
-								</div>
-								<div class="col-2"></div>
-							</div>
 						</div>
+					</header>
+				</div>
+					<!-- END OF HEADER TOP --->
+				
+
+
+				<!-- NAV 1 -->
+				<div class="row">
+					<div class="container-fluid px-0">
+						<nav class="navbar navbar-expand-lg navbar-expand-md vanish-sm " id="navbar__expand">
+							<div class="collapse navbar-collapse">
+								<div class="navbar-nav ml-auto">
+									<ul>
+										<li><a class="nav-item nav-link" href="index.html">HOME</a></li>
+										<li><a class="nav-item nav-link active" href="team.html">TEAM</a></li>
+										<li class="dropdown">
+											<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> CLASSES</a>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+												<a class="dropdown-item" href="voice.html">Voice</a>
+												<a class="dropdown-item" href="string.html">String</a>
+												<a class="dropdown-item" href="piano.html">Piano</a>
+												<a class="dropdown-item" href="drums.html">Drums</a>
+												<a class="dropdown-item" href="brass.html">Brass</a>
+												<a class="dropdown-item" href="traditional.html">Traditional</a>
+											</div>
+										</li>
+										<li><a class="nav-item nav-link" href="faqs.html">FAQs</a></li>
+										<li><a class="nav-item nav-link" href="contact.html">CONTACT</a></li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
 
 				
+
+				<!-- NAV 2 -->
+				<div class="row">
+					<div class="container-fluid px-0">
+						<nav class="navbar mx-0" id="nav__collapse">
+
+							<ul class="mx-0">
+								<li>
+									<a class="nav-item nav-link nav-item__collapse" href="index.html">
+										<img src="assets/images/home-white.png" alt="home">
+									</a>
+								</li>
+								
+								<li>
+									<a class="nav-item nav-link nav-item__collapse active" href="team.html">
+										<img src="assets/images/team-white.png" alt="team"></a>
+									</li>
+								<li class="dropdown">
+									<a class="nav-item nav-link dropdown-toggle nav-item__collapse" data-toggle="dropdown" href="#">
+										<img src="assets/images/clef-white.png" alt="classes">
+									</a>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+										<a class="dropdown-item" href="voice.html">Voice</a>
+										<a class="dropdown-item" href="string.html">String</a>
+										<a class="dropdown-item" href="piano.html">Piano</a>
+										<a class="dropdown-item" href="drums.html">Drums</a>
+										<a class="dropdown-item" href="brass.html">Brass</a>
+										<a class="dropdown-item" href="traditional.html">Traditional</a>
+									</div>
+								</li>
+								<li>
+									<a class="nav-item nav-link nav-item__collapse" href="faqs.html">
+										<img src="assets/images/faq-white.png" alt="faqs">
+									</a>
+								</li>
+
+								<li>
+									<a class="nav-item nav-link" href="contact.html">
+										<img src="assets/images/phone-white.png" alt="contact">
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
-				<!-- END ROW-->
-	
-		<!-- END OF CONTAINER -->
-	</header>
+				<!-- END OF NAV 2 -->
 
-
-
-
-	<!-- NAV -->
-
-	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top vanish-sm" id="navbar__expand">
-		<div class="collapse navbar-collapse">
-			<div class="navbar-nav ml-auto">
-				<ul>
-					<li><a class="nav-item nav-link" href="index.html">HOME</a></li>
-					<li><a class="nav-item nav-link active" href="team.html">TEAM</a></li>
-					<li class="dropdown">
-						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> CLASSES</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<a class="dropdown-item" href="voice.html">Voice</a>
-							<a class="dropdown-item" href="string.html">String</a>
-							<a class="dropdown-item" href="piano.html">Piano</a>
-							<a class="dropdown-item" href="percussion.html">Percussion</a>
-							<a class="dropdown-item" href="brass.html">Brass</a>
-							<a class="dropdown-item" href="traditional.html">Traditional</a>
-						</div>
-					</li>
-`					<li><a class="nav-item nav-link" href="faqs.html">FAQs</a></li>
-					<li><a class="nav-item nav-link" href="contact.html">CONTACT</a></li>
-				</ul>
-			</div>
+			</div>	
 		</div>
-	</nav>
-	
-	<nav class="navbar sticky-top mx-0" id="nav__collapse">
-
-		<ul class="mx-0">
-			<li>
-				<a class="nav-item nav-link nav-item__collapse" href="index.html">
-					<img src="assets/images/home-white.png" alt="home">
-				</a>
-			</li>
-			
-			<li>
-				<a class="nav-item nav-link nav-item__collapse active" href="team.html">
-					<img src="assets/images/team-white.png" alt="team"></a>
-				</li>
-			<li class="dropdown">
-				<a class="nav-item nav-link dropdown-toggle nav-item__collapse" data-toggle="dropdown" href="#">
-					<img src="assets/images/clef-white.png" alt="classes">
-				</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-					<a class="dropdown-item" href="voice.html">Voice</a>
-					<a class="dropdown-item" href="string.html">String</a>
-					<a class="dropdown-item" href="piano.html">Piano</a>
-					<a class="dropdown-item" href="percussion.html">Percussion</a>
-					<a class="dropdown-item" href="brass.html">Brass</a>
-					<a class="dropdown-item" href="traditional.html">Traditional</a>
-				</div>
-			</li>
-			<li>
-				<a class="nav-item nav-link nav-item__collapse" href="faqs.html">
-					<img src="assets/images/faq-white.png" alt="faqs">
-				</a>
-			</li>
-
-			<li>
-				<a class="nav-item nav-link" href="contact.html">
-					<img src="assets/images/phone-white.png" alt="contact">
-				</a>
-			</li>
-		</ul>
-
-	</nav>
-
-
+	</div>
 	<!-- END OF NAV -->
 	
 
@@ -178,9 +180,6 @@
 	<main>
 
 		
-
-
-
 
 	<!-- =====================DON'T TOUCH ABOVE CODES -->
 
@@ -202,8 +201,10 @@
 				<div class="row justify-content-center px-3">
 					
 					<div class="main-text card-text text-center text-small-md text-small-sm">
-						Sonore coaches are highly accomplished musicians who have a passion for teaching. 
-						<span class="break-lg break-md"> With their help and dedication, you can definitely learn to play any instrument of choice like a pro in no time!</span>
+						<p> <span class="company-name">Sonore&nbsp;</span> has developed a reputation in the community for its excellent instruction.  
+						Our coaches have studied at some of the finest music schools and conservatories in the world. 
+						But more importantly, they sincerely care about their students and they are committed to 
+						providing a learning experience that fosters and develops a life-long love of music. </p>
 					</div>
 					
 				</div>
@@ -221,7 +222,7 @@
 				<button class="btn text-small-lg text-small-md text-small-sm" onclick="filterSelection('voice')">Voice</button>
 				<button class="btn text-small-lg text-small-md text-small-sm" onclick="filterSelection('string')">String</button>
 				<button class="btn text-small-lg text-small-md text-small-sm" onclick="filterSelection('piano')">Piano</button>
-				<button class="btn text-small-lg text-small-md text-small-sm" onclick="filterSelection('percussion')">Percussion</button>
+				<button class="btn text-small-lg text-small-md text-small-sm" onclick="filterSelection('drums')">Drums</button>
 				<button class="btn text-small-lg text-small-md text-small-sm" onclick="filterSelection('brass')">Brass</button>
 				<button class="btn text-small-lg text-small-md text-small-sm" onclick="filterSelection('traditional')">Traditional</button>
 			</div>
@@ -240,46 +241,46 @@
 				
 
 					<!-- RTEACHER 1 -->
-					<div class="card string piano percussion mb-5">
+					<div class="card string piano drums mb-5">
 						<div class="card-top">
 							<div class="card-img coach-1 thumbnail-bg"></div>
-							<div class="card-img-middle">
+							<!-- <div class="card-img-middle">
 								<a href="#coach-1">
 									<div class="middle-icon"></div>
 								</a>
-							</div>
+							</div> -->
 						</div>
 						<div class="card-body">
 							<h5 class="card-title red text-small-md text-small-sm">GLEN FISHER</h5>
 							<p class="text-muted text-small-md text-small-sm">Founder, CEO</p>
-							<p class="main-text card-text text-small-md text-small-sm">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="main-text card-text text-small-md text-small-sm">Glen is an established performer and musician. He created Sonore in 2015 to reach out to people through his music. </p>
 						</div>
 						<div class="card-footer text-center">
-							<img src="assets/images/guitar-white.png" alt="guitar" class="icon-bg">
-							<img src="assets/images/piano-white.png" alt="piano" class="icon-bg">
-							<img src="assets/images/drum-white.png" alt="drums" class="icon-bg">
+							<a href="string.html"><img src="assets/images/guitar-white.png" alt="guitar" class="icon-bg"></a>
+							<a href="piano.html"><img src="assets/images/piano-white.png" alt="piano" class="icon-bg"></a>
+							<a href="drums.html"><img src="assets/images/drum-white.png" alt="drums" class="icon-bg"></a>
 						</div>
 					</div>
 
 					<!-- TEACHER 2 -->		
-					<div class="card brass percussion voice mb-5">
+					<div class="card brass drums voice mb-5">
 						<div class="card-top">
 							<div class="card-img coach-2 thumbnail-bg"></div>
-							<div class="card-img-middle">
+							<!-- <div class="card-img-middle">
 								<a href="#coach-2">
 									<div class="middle-icon"></div>
 								</a>
-							</div>
+							</div> -->
 						</div>
 						<div class="card-body">
 							<h5 class="card-title red text-small-md text-small-sm">EDGAR BELL</h5>
 							<p class="text-muted text-small-md text-small-sm">Academic Head</p>
-							<p class="main-text card-text text-small-md text-small-sm">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="main-text card-text text-small-md text-small-sm">Edgar is self-taught musician who also happens to love teaching. He is an engineer by day and a rockstar by night. </p>
 						</div>
 						<div class="card-footer text-center">
-							<img src="assets/images/saxophone-white.png" alt="saxophone" class="icon-bg">
-							<img src="assets/images/drum-white.png" alt="drums" class="icon-bg">
-							<img src="assets/images/microphone-white.png" alt="voice" class="icon-bg">
+							<a href="brass.html"><img src="assets/images/saxophone-white.png" alt="saxophone" class="icon-bg"></a>
+							<a href="drums.html"><img src="assets/images/drum-white.png" alt="drums" class="icon-bg"></a>
+							<a href="voice.html"><img src="assets/images/microphone-white.png" alt="guitar" class="icon-bg"></a>
 						</div>
 					</div>
 
@@ -287,21 +288,21 @@
 					<div class="card traditional string mb-5">
 						<div class="card-top">
 							<div class="card-img coach-3 thumbnail-bg"></div>
-							<div class="card-img-middle">
+							<!-- <div class="card-img-middle">
 								<a href="#coach-3">
 									<div class="middle-icon"></div>
 								</a>
-							</div>
+							</div> -->
 						</div>
 						<div class="card-body">
 							<h5 class="card-title red text-small-md text-small-sm">LATOYA SANTOS</h5>
 							<p class="text-muted text-small-md text-small-sm">Music Coach</p>
-							<p class="main-text card-text text-small-md text-small-sm">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="main-text card-text text-small-md text-small-sm">Latoya is an anthropologist who is adept at playing indigenous musical instruments and dancing. </p>
 						</div>
 						<div class="card-footer text-center">
 							<img src="assets/images/theory-white.png" alt="theory" class="icon-bg mr-2">
-							<img src="assets/images/traditional-white.png" alt="traditional" class="icon-bg">
-							<img src="assets/images/guitar-white.png" alt="guitar" class="icon-bg">
+							<a href="traditional.html"><img src="assets/images/traditional-white.png" alt="traditional" class="icon-bg"></a>
+							<a href="string.html"><img src="assets/images/guitar-white.png" alt="guitar" class="icon-bg"></a>
 						</div>
 					</div>
 			
@@ -310,65 +311,65 @@
 					<div class="card voice string traditional mb-5">
 							<div class="card-top">
 							<div class="card-img coach-4 thumbnail-bg"></div>
-							<div class="card-img-middle">
+							<!-- <div class="card-img-middle">
 								<a href="#coach-4">
 									<div class="middle-icon"></div>
 								</a>
-							</div>
+							</div> -->
 						</div>
 						<div class="card-body">
 							<h5 class="card-title red text-small-md text-small-sm">CECIL WANTON</h5>
 							<p class="text-muted text-small-md text-small-sm">Music Coach</p>
-							<p class="main-text card-text text-small-md text-small-sm">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="main-text card-text text-small-md text-small-sm">Cecil is the youngest yet the most experienced musician in the team. She loves teaching kids music.</p>
 						</div>
 						<div class="card-footer text-center">
-							<img src="assets/images/microphone-white.png" alt="guitar" class="icon-bg">
-							<img src="assets/images/traditional-white.png" alt="traditional" class="icon-bg">
-							<img src="assets/images/violin-white.png" alt="violin" class="icon-bg">
+							<a href="voice.html"><img src="assets/images/microphone-white.png" alt="guitar" class="icon-bg"></a>
+							<a href="traditional.html"><img src="assets/images/traditional-white.png" alt="traditional" class="icon-bg"></a>
+							<a href="string.html"><img src="assets/images/violin-white.png" alt="violin" class="icon-bg"></a>
 						</div>
 					</div>
 
 					<!--  TEACHER 5 -->
-					<div class="card piano voice percussion mb-5">
+					<div class="card piano voice drums mb-5">
 						<div class="card-top">
 							<div class="card-img coach-5 thumbnail-bg"></div>
-							<div class="card-img-middle">
+							<!-- <div class="card-img-middle">
 								<a href="#coach-5">
 									<div class="middle-icon"></div>
 								</a>
-							</div>
+							</div> -->
 						</div>
 						<div class="card-body">
 							<h5 class="card-title red text-small-md text-small-sm">SHELDON HARRIS</h5>
 							<p class="text-muted text-small-md text-small-sm">Music Coach</p>
-							<p class="main-text card-text text-small-md text-small-sm">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="main-text card-text text-small-md text-small-sm">Sheldon is a painter and an indie film director. He is also an accomplished pianist who graduated from UP College of Music. </p>
 						</div>
 						<div class="card-footer text-center">
-							<img src="assets/images/piano-white.png" alt="piano" class="icon-bg">
-							<img src="assets/images/microphone-white.png" alt="voice" class="icon-bg">
-							<img src="assets/images/drum-white.png" alt="drums" class="icon-bg">
+							<a href="piano.html"><img src="assets/images/piano-white.png" alt="piano" class="icon-bg"></a>
+							<a href="voice.html"><img src="assets/images/microphone-white.png" alt="guitar" class="icon-bg"></a>
+							<a href="drums.html"><img src="assets/images/drum-white.png" alt="drums" class="icon-bg"></a>
 						</div>
 					</div>
 
 						<!-- TEACHER 6 -->
-					<div class="card string percussion mb-5">
+					<div class="card string drums mb-5">
 						<div class="card-top">
 							<div class="card-img coach-6 thumbnail-bg"></div>
-							<div class="card-img-middle">
+							<!-- <div class="card-img-middle">
 								<a href="#coach-6">
 									<div class="middle-icon"></div>
 								</a>
-							</div>
+							</div> -->
 						</div>
 						<div class="card-body">
 							<h5 class="card-title red text-small-md text-small-sm">LUIS HAYNES</h5>
 							<p class="text-muted text-small-md text-small-sm">Music Coach</p>
-							<p class="main-text card-text text-small-md text-small-sm">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="main-text card-text text-small-md text-small-sm">Luis is a psychiatric who uses music to connect with his patients. He is also licensed to use music therapy in the Philippines.</p>
 						</div>
 						<div class="card-footer text-center">
 							<img src="assets/images/theory-white.png" alt="theory" class="icon-bg">
-							<img src="assets/images/violin-white.png" alt="violin" class="icon-bg">
-							<img src="assets/images/drum-white.png" alt="drums" class="icon-bg">
+							<a href="string.html"><img src="assets/images/violin-white.png" alt="violin" class="icon-bg"></a>
+							<a href="drums.html"><img src="assets/images/drum-white.png" alt="drums" class="icon-bg"></a>
 						</div>
 					</div>
 				</div>
@@ -390,7 +391,7 @@
 
 	
 
-
+	<hr class="my-5 vanish-md vanish-sm">
 
 
 

@@ -25,7 +25,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/*font-family: 'Raleway', sans-serif;*/
 }
 
 
@@ -34,16 +33,109 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-html, body, header, main, contact {
+html, body, header, sections, main, contact {
 	background: #f2f2f2;
 }
+
+html {
+	font-size: 16px;
+}
+
+
+/* TOP NAV */
+
+#wrap--home .top-of-nav {
+	padding: 0;
+	margin: 0;
+	background: #f2f2f2;
+	z-index: 10;
+}
+
+#wrap--home .col-12:first-child {
+	background: #f2f2f2;
+}
+
+
+#wrap--home .top-of-nav .col > img {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#wrap--home .top-of-nav .col:nth-of-type(2),
+#wrap--home .top-of-nav .col:nth-of-type(3) {
+	margin: 10px 0;
+}
+
+#wrap--home .company--name {
+	font-family: 'Dancing Script', cursive;
+	color: #93291E;
+	font-size: 3em;
+	font-weight: 700;
+	padding: 0;
+}
+
+.main--home i {
+	color: #c5a15b;
+	text-decoration: none!important;
+}
+
+.main--home i:hover, .main--home i:focus {
+	color: #93291E;
+	text-decoration: none!important;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================HOME=========================== */
+
+#landing {
+	background-image: url(../images/header-8.jpeg);
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	background-position-y: center;
+	background-position-x: right;
+
+}
+
+#landing h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 7em;
+	color: #7a0909;
+	text-shadow: 2px 1px  3px #f2f2f2;
+	font-weight: 900;
+
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+
+#landing p {
+	position: absolute;
+	top: 115px;
+	left: 70px;
+	text-shadow: 2px 1px  3px #f2f2f2;
+}
+
+.card-body-home {
+	background: #93291E;
+}
+
 
 
 /* ==================== ANIMATED BUTTONS ==================== */
 
 /* Global Button Styles */
 a.animated-button {
-	background: linear-gradient(to bottom, #a30303, #7a0909);
+	background: #7a0909;
 }
 
 a.animated-button:link, a.animated-button:visited {
@@ -153,6 +245,8 @@ a.animated-button.victoria-three:hover:after {
 	opacity: 1;
 }
 
+
+/* GALLERY */
 
 
 
@@ -370,15 +464,6 @@ footer__bottom {
 	position: relative;
 }
 
-#contact {
-	color: #74757f;
-}
-
-#contact-button {
-	margin:	2.5vh 0;
-}
-
-
 input,
 textarea,
 select {
@@ -392,8 +477,31 @@ input:focus,
 textarea:focus,
 input:active,
 textarea:active {
-    border: 1px solid #93291E;
+    border: 1px solid #c5a15b!important;
 }
+
+
+
+textarea {
+	margin: 0 15px;
+}
+
+.form-control:focus {
+	border-color: inherit;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
+#file {
+	display: none;
+	visibility: hidden;
+	position: absolute;
+}
+
 
 /* GOOGLE MAP */
 #google-map {
@@ -410,353 +518,6 @@ textarea:active {
 	width: 100% !important;
 	height: 100% !important;
 }
-
-
-
-
-
-
-/* ============================ CLASSES ===================== */
-
-
-
-
-/* TABLE  */
-#schedule {
-	margin-top: 6em;
-}
-
-.table__heading {
-	background-color: #424242;
-	color: white;
-}
-
-.table__body {
-	background: #fff;
-}
-
-.table {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.table a {
-	color: #7a0909;
-	font-weight: 700;
-}
-
-
-
-/* TESTOMINIAL */
-.carousel-1 {
-	background: url(../images/coach-7.jpeg);
-	background-size: cover;
-	width: 100%;	
-	height: 20em;
-}
-
-.carousel-2 {
-	background: url(../images/coach-7.jpeg);
-	background-size: cover;
-	width: 100%;	
-	height: 20em;
-}
-
-.carousel-3 {
-	background: url(../images/coach-7.jpeg);
-	background-size: cover;
-	width: 100%;	
-	height: 20em;
-}
-
-
-/* ================================VOICE===================== */
-
-/* HEADER BACKGROUND */
-.bg--image-3 {
-	background-image: url(../images/voice-6.jpeg);
-	background-size: cover;
-	height: 50vh;
-	position: relative;
-	background-position-y: center;
-}
-
-  
-/* #accordion--class .transition,  p, .accordion__list-item > i:before, .accordion__list-item > i:after {
-	transition: all 0.25s ease-in-out;
-  }
-  
-#accordion--class .flipIn, .accordion__list-item {
-	animation: flipdown 0.5s ease both;
-  }
-  
-#accordion--class .no-select, .accordion__list-item > h4 {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	font-size: 16px;
-}
-  
-#accordion--class {
-	min-height: 0;
-	display: inline-block;
-	position: relative;
-	padding: 20px;
-}
-  
-#accordion--class .accordion__list-item > h4 {
-	display: block;
-	cursor: pointer;
-	background: none;
-  }
-  
-#accordion--class .accordion__list-item > p {
-	color: #191919;
-	line-height: 26px;
-	letter-spacing: 1px;
-	position: relative;
-	overflow: hidden;
-	max-height: 800px;
-	width: 100%;
-	opacity: 1;
-	transform: translate(0, 0);
-	margin-top: 2em;
-	z-index: 2;
-  }
-  
-#accordion--class .accordion__list {
-	list-style: none;
-	perspective: 900;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-  }
-
-#accordion--class  .accordion__list-item {
-	position: relative;
-	padding: 0;
-	margin: 0;
-	padding-bottom: 4px;
-	padding-top: 18px;
-	border-top: 1px dotted gray;
-  }
-
-#accordion--class.accordion__list-item:nth-of-type(1) {
-	animation-delay: 0.5s;
-  }
-
-#accordion--class .accordion__list-item:nth-of-type(2) {
-	animation-delay: 0.75s;
-  }
-
-#accordion--class .accordion__list-item:nth-of-type(3) {
-	animation-delay: 1s;
-  }
-
-#accordion--class .accordion__list-item:nth-of-type(4) {
-	animation-delay: 1.5s;
-  }
-
-#accordion--class .accordion__list-item:nth-of-type(5) {
-	animation-delay: 2s;
-  }
-
-#accordion--class .accordion__list-item:nth-of-type(6) {
-	animation-delay: 2.5s;
-  }
-
-#accordion--class .accordion__list-item:nth-of-type(7) {
-	animation-delay: 3s;
-  }
-
-
-
-  
-#accordion--class .accordion__list-item:last-of-type {
-	padding-bottom: 0;
-  }
-
-#accordion--class .accordion__list-item > i {
-	position: absolute;
-	transform: translate(-6px, 0);
-	margin-top: 16px;
-	right: 0;
-  }
-  
-#accordion--class .accordion__list-item > i:before, .accordion__list-item > i:after {
-	content: "";
-	position: absolute;
-	background-color: #7a0909;
-	width: 3px;
-	height: 9px;
-  }
-
-#accordion--class .accordion__list-item > i:before {
-	transform: translate(-2px, 0) rotate(45deg);
-  }
-
-#accordion--class .accordion__list-item > i:after {
-	transform: translate(2px, 0) rotate(-45deg);
-  }
-
-#accordion--class .accordion__list-item > input[type=checkbox] {
-	position: absolute;
-	cursor: pointer;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-  }
-
-#accordion--class .accordion__list-item > input[type=checkbox]:checked ~ p {
-	margin-top: 0;
-	max-height: 0;
-	opacity: 0;
-	transform: translate(0, 50%);
-  }
-  
-#accordion--class .accordion__list-item > input[type=checkbox]:checked ~ i:before {
-	transform: translate(2px, 0) rotate(45deg);
-  }
-
-#accordion--class .accordion__list-item > input[type=checkbox]:checked ~ i:after {
-	transform: translate(-2px, 0) rotate(-45deg);
-  }
-  
-  
-@keyframes flipdown {
-	0% {
-	  opacity: 0;
-	  transform-origin: top center;
-	  transform: rotateX(-90deg);
-	}
-	5% {
-	  opacity: 1;
-	}
-	80% {
-	  transform: rotateX(8deg);
-	}
-	83% {
-	  transform: rotateX(6deg);
-	}
-	92% {
-	  transform: rotateX(-3deg);
-	}
-	100% {
-	  transform-origin: top center;
-	  transform: rotateX(0deg);
-	}
-  } */
-
-
-
-/* ================================STRING===================== */
-
-/* HEADER BACKGROUND */
-.bg--image-4 {
-	background-image: url(../images/string-4.jpeg);
-	background-size: cover;
-	height: 50vh;
-	position: relative;
-	background-position-y: center;
-}
-
-
-/* ==========================PIANO=========================== */
-
-/* HEADER BACKGROUND */
-.bg--image-5 {
-	background-image: url(../images/piano-1.jpeg);
-	background-size: cover;
-	height: 50vh;
-	position: relative;
-	background-position-y: center;
-}
-
-
-/* ==========================PERCUSSION=========================== */
-
-/* HEADER BACKGROUND */
-.bg--image-6 {
-	background-image: url(../images/percussion-6.jpeg);
-	background-size: cover;
-	height: 50vh;
-	position: relative;
-	background-position-y: center;
-}
-
-
-/* ==========================BRASS=========================== */
-
-/* HEADER BACKGROUND */
-.bg--image-7 {
-	background-image: url(../images/brass-4.jpeg);
-	background-size: cover;
-	height: 60vh;
-	position: relative;
-	background-position-y: bottom;
-}
-
-
-/* ==========================TRADITIONAL=========================== */
-
-/* HEADER BACKGROUND */
-.bg--image-8 {
-	background-image: url(../images/traditional-2.jpeg);
-	background-size: cover;
-	height: 60vh;
-	position: relative;
-	background-position-y: center;
-}
-
-
-/* ==========================HOME=========================== */
-
-/* #carousel--home {
-	width: 100%;
-	height: 100vh;
-	padding: 0;
-	overflow: hidden;
-} */
-
-#landing {
-	background-image: url(../images/header-8.jpeg);
-	background-size: cover;
-	height: 100vh;
-	position: relative;
-	background-position-y: center;
-	background-position-x: right;
-
-}
-
-#landing h1 {
-	font-family: 'Dancing Script', cursive;
-	font-size: 7em;
-	color: #7a0909;
-	text-shadow: 2px 1px  3px #f2f2f2;
-	font-weight: 900;
-
-	position: absolute;
-	top: 8px;
-	left: 16px;
-}
-
-#landing p {
-	position: absolute;
-	top: 115px;
-	left: 70px;
-	text-shadow: 2px 1px  3px #f2f2f2;
-}
-
-
-.card-body-home {
-	background: #93291E;
-}
-
-
 
 
 /* ================================ TEAM ============================= */
@@ -789,9 +550,6 @@ textarea:active {
 #team .card-deck .show {
 	display: block;
 }
-
-
-
 
 
 /* COACHES */
@@ -866,7 +624,6 @@ textarea:active {
 }
 
 
-
 /* COACH PROFILE ANIMATION */
 .card-top {
     position: relative;
@@ -910,6 +667,128 @@ textarea:active {
 }
 
 
+
+/* ============================ CLASSES ===================== */
+
+
+/* TABLE  */
+#schedule {
+	margin-top: 6em;
+}
+
+.table__heading {
+	background-color: #424242;
+	color: white;
+}
+
+.table__body {
+	background: #fff;
+}
+
+.table {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.table a {
+	color: #7a0909;
+	font-weight: 700;
+}
+
+
+
+/* TESTOMINIAL */
+.carousel-1 {
+	background: url(../images/coach-7.jpeg);
+	background-size: cover;
+	width: 100%;	
+	height: 20em;
+}
+
+.carousel-2 {
+	background: url(../images/coach-7.jpeg);
+	background-size: cover;
+	width: 100%;	
+	height: 20em;
+}
+
+.carousel-3 {
+	background: url(../images/coach-7.jpeg);
+	background-size: cover;
+	width: 100%;	
+	height: 20em;
+}
+
+
+/* ================================VOICE===================== */
+
+/* HEADER BACKGROUND */
+.bg--image-3 {
+	background-image: url(../images/voice-6.jpeg);
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+	background-position-y: center;
+}
+
+
+/* ================================STRING===================== */
+
+/* HEADER BACKGROUND */
+.bg--image-4 {
+	background-image: url(../images/string-4.jpeg);
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+	background-position-y: center;
+}
+
+
+/* ==========================PIANO=========================== */
+
+/* HEADER BACKGROUND */
+.bg--image-5 {
+	background-image: url(../images/piano-1.jpeg);
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+	background-position-y: center;
+}
+
+
+/* ==========================PERCUSSION=========================== */
+
+/* HEADER BACKGROUND */
+.bg--image-6 {
+	background-image: url(../images/percussion-6.jpeg);
+	background-size: cover;
+	height: 50vh;
+	position: relative;
+	background-position-y: center;
+}
+
+
+/* ==========================BRASS=========================== */
+
+/* HEADER BACKGROUND */
+.bg--image-7 {
+	background-image: url(../images/brass-4.jpeg);
+	background-size: cover;
+	height: 60vh;
+	position: relative;
+	background-position-y: bottom;
+}
+
+
+/* ==========================TRADITIONAL=========================== */
+
+/* HEADER BACKGROUND */
+.bg--image-8 {
+	background-image: url(../images/traditional-2.jpeg);
+	background-size: cover;
+	height: 60vh;
+	position: relative;
+	background-position-y: center;
+}
 
 
 /*================================ FAQS ================================ */
@@ -1019,8 +898,6 @@ textarea:active {
   }
 
 
-
-  
   .accordion__list-item:last-of-type {
 	padding-bottom: 0;
   }
@@ -1097,15 +974,31 @@ textarea:active {
   }
 
 
-
   
 
 
 /* ================================ REUSABLE ============================ */
 
+.underline {
+	text-decoration: underline;
+}
+.hr-break {
+	border: .5px dashed #2b2b2b;
+}
+
+.line-height-2 {
+	line-height: 2;
+}
+
+.company-name {
+	font-family: 'Dancing Script', cursive!important;
+	color: #93291E;
+	font-weight: 900;
+	font-size: 30px;
+}
+
 .display-4 {
 	font-family: 'Dancing Script', cursive;
-	/* letter-spacing: .1em; */
 	color: #141414;
 	vertical-align: bottom;
 	text-shadow: 2px 1px  3px white;
@@ -1158,21 +1051,6 @@ textarea:active {
 }
 
 
-/* .lightbox img {
-	height: 70px;
-	width: 70px;
-	display: inline-block;
-	border-radius: 5%;
-} */
-
-
-/* .btn--main {
-	background: #93291E;
-	color: #f2f2f2;
-	width: 30%;
-} */
-
-
 .bg--content {
 	position: absolute;
 	top: 50%;
@@ -1223,96 +1101,6 @@ textarea:active {
 
 
 
-/******* ABOUT ********/
-
-
-.jumbotron {
-	background-color: #141414;
-	height: 90vh;
-	border-radius: 0;
-
-}
-
-#landing-about {
-	color: #f2f2f2;
-	font-size: 5em;
-	padding-top: 20vh;
-	letter-spacing: 5px;
-}
-
-.fadeIn{
-	animation-duration: 5s;
-}
-
-#mission {
-	height: 100%;
-	background-color: #141414;
-}
-
-#about-tags {
-	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
-}
-
-
-#vision {
-	height: 100%;
-	background-color: #f2f2f2;
-}
-
-
-/******* GALLERY ********/
-
-
-#gallery .card {
-	box-shadow: 1px 1px 10px 4px gray;
-	border-radius: 0;
-	border-color: 1px solid white;
-	width: auto;
-}
-
-
-#gallery .card:hover {
-	animation: fadeIn;
-	animation-duration: 2s;
-	animation-delay: 0s;
-}
-
-.myframe {
-	width: 100%;
-	height: 500px;
-}
-
-/* iframe {
-	width: 100%;
-	height: auto;
-} */
-
-textarea {
-	margin: 0 15px;
-}
-
-.form-control:focus {
-	border-color: inherit;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-
-.form-control {
-	border-radius: 0;
-}
-
-#file {
-	display: none;
-	visibility: hidden;
-	position: absolute;
-}
-
-
-#header__top {
-	border-bottom: 2px double #7a0909;
-}
-
 
 
 
@@ -1333,7 +1121,7 @@ textarea {
 
 
 
-/************* DESKTOP **************/
+/*============================ DESKTOP ==========================*/
 
 @media only screen and (min-width: 961px) {
 
@@ -1346,7 +1134,7 @@ textarea {
 		width: 100%;
 		position: absolute;
 		display: block;
-		background: #f2f2f2;
+		background: #c5a15b;
 		bottom: -8px;
 		left: 2px;
 		border: 0;
@@ -1381,7 +1169,6 @@ textarea {
 	}
 
 	/* HOMLE */
-	.home img[alt*="microphone"],
 	.home img[alt*="guitar"],
 	.home img[alt*="piano"],
 	.home img[alt*="drums"],
@@ -1389,8 +1176,11 @@ textarea {
 	.home img[alt*="traditional"] {
 		width: 50px;
 		height: 50px;
-		align-content: left;
-		padding-right: 1px;
+	}
+
+	.home img[alt*="microphone"] {
+		width: 40px;
+		height: 40px;
 	}
 	
 
@@ -1434,9 +1224,13 @@ textarea {
 }
 
 
-/************* TABLET **************/
+/*==============================TABLET ==============================*/
 
 @media only screen and (min-width:426px) and (max-width:960px) { 
+
+	h1 {
+		font-size: 1.8rem;
+	}
 
 	/* NAVBAR */
 
@@ -1450,7 +1244,7 @@ textarea {
 		width: 100%;
 		position: absolute;
 		display: block;
-		background: #f2f2f2;
+		background: #c5a15b;
 		bottom: -8px;
 		left: 2px;
 		border: 0;
@@ -1543,7 +1337,6 @@ textarea {
 	}
 
 	/* HOME */
-	.home img[alt*="microphone"],
 	.home img[alt*="guitar"],
 	.home img[alt*="piano"],
 	.home img[alt*="drums"],
@@ -1551,13 +1344,18 @@ textarea {
 	.home img[alt*="traditional"] {
 		width: 35px;
 		height: 35px;
-		align-content: left;
-		padding-right: 1px;
+	}
+
+	.home img[alt*="microphone"] {
+		width: 30px;
+		height: 30px;
 	}
 	
 
 
 	/* REUSABLE */
+
+	
 	
 	.vanish-md {
 		display: none;
@@ -1597,9 +1395,13 @@ textarea {
 
 
 
-/************* MOBILE **************/
+/*==============================MOBILE==============================*/
 
 @media only screen and (max-width:425px) { 
+
+	h1 {
+		font-size: 1.5rem;
+	}
 
 
 	/* HEADER TOP */
@@ -1648,7 +1450,7 @@ textarea {
 		width: 100%;
 		position: absolute;
 		display: block;
-		background: #f2f2f2;
+		background: #c5a15b;
 		bottom: -5px;
 		left: 2px;
 		border: 0;
@@ -1717,15 +1519,6 @@ textarea {
 		margin-left: 1em;
 		margin-right: 1em;
 	}
-
-	
-	
-
-
-
-
-
-
 
 
 

@@ -33,129 +33,133 @@
 </head>
 <body>
 
-	<header class="container-fluid" id="header__top">
+	<div class="container-fluid sticky-top" id="wrap--home">
+		<div class="row">
+			<div class="col-12">
 
-				<div class="row">
-
-						<div class="col col-lg-3 col-md-7 col-sm-12 text-center">
-							<!-- <div class="compay--logo">
-								<img src="assets/images/logo2.png" alt="logo"> -->
+				<div class="row top-of-nav">
+					<header class="container-fluid">
+						<div class="row">
+							<div class="col col-lg-3 col-md-7 col-sm-12 text-center">
 								<div class="company--name">
 								Sonore
 								</div>
-							<!-- </div> -->
-						</div>
-						
-						<div class="col col-lg-3">
-							<div class="row">
-								<div class="col-2">
-									<img src="assets/images/phone.png" alt="phone">
-								</div>
-								<div class="col-10 pb-0 gray-text">
-									<div>1-234-567-890</div>
-									<div>sonore@gmail.com</div>
-								</div>
 							</div>
-						</div>
-	
-						<div class="col col-lg-3">
-							<div class="row">
-								<div class="col-2">
-									<img src="assets/images/location.png" alt="address">
-								</div>
-								<div class="col-10 pb-0 gray-text">
-									<div>123 Ayala, Tower One</div>
-									<div>Makati City, PH</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="col col-lg-3 col-md-5 col-sm-12 text-center">
-							<div class="row" id="header-button">
-								<div class="col-2"></div>
-								<div class="col-8">
-									<a class="btn font-weight-heavy animated-button victoria-three" href="#" onClick="scrollToBottom()">BOOK A LESSON</a>
-								</div>
-								<div class="col-2"></div>
+										
+							<div class="col col-lg-3 vanish-md vanish-sm">
+								<img src="assets/images/phone.png" alt="phone">
+								<div class="gray-text">1-234-567-890</div>
+								<div class="gray-text">sonore@gmail.com</div>
 							</div>
+					
+							<div class="col col-lg-3 vanish-md vanish-sm">
+								<img src="assets/images/location.png" alt="address">
+								<div class="gray-text">123 Ayala, Tower One</div>
+								<div class="gray-text">Makati City, PH</div>		
+							</div>
+
+							<div class="col col-lg-3 col-md-5 col-sm-12 text-center">
+								<div class="containter">
+									<div class="row my-3">
+										<div class="col-2"></div>
+										<div class="col-8">
+											<a class="btn font-weight-heavy animated-button victoria-three" id="button" href="#" onClick="scrollToBottom()">
+												BOOK A LESSON
+											</a>
+										</div>
+										<div class="col-2"></div>
+									</div>
+								</div>
+							</div>
+
 						</div>
+					</header>
+				</div>
+					<!-- END OF HEADER TOP --->
+				
+
+
+				<!-- NAV 1 -->
+				<div class="row">
+					<div class="container-fluid px-0">
+						<nav class="navbar navbar-expand-lg navbar-expand-md vanish-sm " id="navbar__expand">
+							<div class="collapse navbar-collapse">
+								<div class="navbar-nav ml-auto">
+									<ul>
+										<li><a class="nav-item nav-link" href="index.html">HOME</a></li>
+										<li><a class="nav-item nav-link" href="team.html">TEAM</a></li>
+										<li class="dropdown">
+											<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> CLASSES</a>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+												<a class="dropdown-item" href="voice.html">Voice</a>
+												<a class="dropdown-item" href="string.html">String</a>
+												<a class="dropdown-item" href="piano.html">Piano</a>
+												<a class="dropdown-item" href="drums.html">Drums</a>
+												<a class="dropdown-item" href="brass.html">Brass</a>
+												<a class="dropdown-item" href="traditional.html">Traditional</a>
+											</div>
+										</li>
+										<li><a class="nav-item nav-link" href="faqs.html">FAQs</a></li>
+										<li><a class="nav-item nav-link active" href="contact.html">CONTACT</a></li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
 
 				
+
+				<!-- NAV 2 -->
+				<div class="row">
+					<div class="container-fluid px-0">
+						<nav class="navbar mx-0" id="nav__collapse">
+
+							<ul class="mx-0">
+								<li>
+									<a class="nav-item nav-link nav-item__collapse" href="index.html">
+										<img src="assets/images/home-white.png" alt="home">
+									</a>
+								</li>
+								
+								<li>
+									<a class="nav-item nav-link nav-item__collapse" href="team.html">
+										<img src="assets/images/team-white.png" alt="team"></a>
+									</li>
+								<li class="dropdown">
+									<a class="nav-item nav-link dropdown-toggle nav-item__collapse" data-toggle="dropdown" href="#">
+										<img src="assets/images/clef-white.png" alt="classes">
+									</a>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+										<a class="dropdown-item" href="voice.html">Voice</a>
+										<a class="dropdown-item" href="string.html">String</a>
+										<a class="dropdown-item" href="piano.html">Piano</a>
+										<a class="dropdown-item" href="drums.html">Drums</a>
+										<a class="dropdown-item" href="brass.html">Brass</a>
+										<a class="dropdown-item" href="traditional.html">Traditional</a>
+									</div>
+								</li>
+								<li>
+									<a class="nav-item nav-link nav-item__collapse" href="faqs.html">
+										<img src="assets/images/faq-white.png" alt="faqs">
+									</a>
+								</li>
+
+								<li>
+									<a class="nav-item nav-link active" href="contact.html">
+										<img src="assets/images/phone-white.png" alt="contact">
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
-					<!-- END ROW-->
-	
-		<!-- END OF CONTAINER -->
-	</header>
+				<!-- END OF NAV 2 -->
 
-
-
-
-	<!-- NAV -->
-
-	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top vanish-sm" id="navbar__expand">
-		<div class="collapse navbar-collapse">
-			<div class="navbar-nav ml-auto">
-				<ul>
-					<li><a class="nav-item nav-link" href="index.html">HOME</a></li>
-					<li><a class="nav-item nav-link" href="team.html">TEAM</a></li>
-					<li class="dropdown">
-						<a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#"> CLASSES</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<a class="dropdown-item" href="voice.html">Voice</a>
-							<a class="dropdown-item" href="string.html">String</a>
-							<a class="dropdown-item" href="piano.html">Piano</a>
-							<a class="dropdown-item" href="percussion.html">Percussion</a>
-							<a class="dropdown-item" href="brass.html">Brass</a>
-							<a class="dropdown-item" href="traditional.html">Traditional</a>
-						</div>
-					</li>
-					<li><a class="nav-item nav-link" href="faqs.html">FAQs</a></li>
-					<li><a class="nav-item nav-link active" href="contact.html">CONTACT</a></li>
-				</ul>
-			</div>
+			</div>	
 		</div>
-	</nav>
-
-	<nav class="navbar sticky-top mx-0" id="nav__collapse">
-
-		<ul class="mx-0">
-			<li>
-				<a class="nav-item nav-link nav-item__collapse" href="index.html">
-					<img src="assets/images/home-white.png" alt="home">
-				</a>
-			</li>
-			
-			<li>
-				<a class="nav-item nav-link nav-item__collapse" href="team.html">
-					<img src="assets/images/team-white.png" alt="team"></a>
-				</li>
-			<li class="dropdown">
-				<a class="nav-item nav-link dropdown-toggle nav-item__collapse" data-toggle="dropdown" href="#">
-					<img src="assets/images/clef-white.png" alt="classes">
-				</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-					<a class="dropdown-item" href="voice.html">Voice</a>
-					<a class="dropdown-item" href="string.html">String</a>
-					<a class="dropdown-item" href="piano.html">Piano</a>
-					<a class="dropdown-item" href="percussion.html">Percussion</a>
-					<a class="dropdown-item" href="brass.html">Brass</a>
-					<a class="dropdown-item" href="traditional.html">Traditional</a>
-				</div>
-			</li>
-			<li>
-				<a class="nav-item nav-link nav-item__collapse" href="faqs.html">
-					<img src="assets/images/faq-white.png" alt="faqs">
-				</a>
-			</li>
-
-			<li>
-				<a class="nav-item nav-link active" href="contact.html">
-					<img src="assets/images/phone-white.png" alt="contact">
-				</a>
-			</li>
-		</ul>
-
-	</nav>
+	</div>
 
 
 	<!-- END OF NAV -->
