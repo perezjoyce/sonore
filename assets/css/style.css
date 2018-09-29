@@ -33,13 +33,15 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-html, body, header, sections, main, contact {
+html, body, header, section, main, .wrap, #contact {
 	background: #f2f2f2;
-}
+} 
 
 html {
 	font-size: 16px;
 }
+
+
 
 
 /* TOP NAV */
@@ -86,9 +88,49 @@ html {
 	text-decoration: none!important;
 }
 
+/* Global Button Styles */
 
+.btn {
+	border-radius: 0!important;
+}
 
+a.btn.animated-button {
+	border-radius: 0;
+	display: block!important;
+	border: 1px solid #7a0909;
+	color: #7a0909;
+	outline: none!important;
+	box-shadow: none!important;
+	/* padding controls thinkness of button*/
+	padding: 5px;
+	text-decoration: none!important;
+	text-align: center;
+	overflow:hidden;
+	position: relative;
+	cursor: pointer;
 
+} 
+
+a.btn.animated-button:hover {
+	border-radius: 0;
+	display: block!important;
+	border: #f2f2f2!important;
+	outline: none!important;
+	box-shadow: none!important;
+	background: #7a0909;
+	color: #fff;
+	/* padding controls thinkness of button*/
+	padding: 5px;
+	text-decoration: none!important;
+	text-align: center;
+	overflow:hidden;
+	position: relative;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	cursor: pointer;
+} 
 
 
 
@@ -131,122 +173,6 @@ html {
 
 
 
-/* ==================== ANIMATED BUTTONS ==================== */
-
-/* Global Button Styles */
-a.animated-button {
-	background: #7a0909;
-}
-
-a.animated-button:link, a.animated-button:visited {
-	width: 100%;
-	height: 100%;;
-	position: absolute;
-	top: 50%;
-    left: 50%;
-	transform: translate(-50%, -50%);
-	font-size:14px;
-	font-weight: bold;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-a.animated-button:link:after, a.animated-button:visited:after {
-	content: "";
-	position: inherit;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
-}
-a.animated-button:link:hover, a.animated-button:visited:hover, a.animated-button:visited:active,
-a.animated-button:visited:focus {
-	text-shadow: none;
-	-webkit-box-shadow: none!important;
-	box-shadow: none!important;
-	outline: none!important;
-	color: #fff;
-	background: linear-gradient(to bottom, #a30303, #93291E);
-	/* border: 1px solid #e70707; */
-}
-
-.btn.focus, .btn:focus {
-	outline: 0;
-    box-shadow: none;
-}
-
-
-a.animated-button:link, a.animated-button:visited {
-	position: relative;
-	color: #f2f2f2;
-	font-size:14px;
-	border-radius: 0;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-	outline: none;
-}
-
-a.animated-button.victoria-three {
-	/* border: 1px solid #424242; */
-	min-width: 180px;
-	border: 0;
-}
-
-a.animated-button.victoria-three--submit {
-	background: linear-gradient(to bottom, #a30303, #93291E);
-	color: #f2f2f2;
-	/* min-width: 180px; */
-}
-a.animated-button.victoria-three:after {
-	background: #fff;
-	color: #93291E;
-	opacity: .5;
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
-
-a.animated-button.victoria-three--submit:after {
-	/* background: #93291E; */
-	color: #fff;
-	opacity: .5;
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	border: 0;
-}
-
-
-a.animated-button.victoria-three:hover:after {
-	height: 140%;
-	opacity: 1;
-}
-
-
-/* GALLERY */
 
 
 
@@ -282,19 +208,12 @@ img[alt*="email"] {
 }
 
 
-#header-button {
-	margin:	2vh 0;
-} 
-
 
 #header__top .col:nth-child(2),
 #header__top .col:nth-child(3) {
 	margin-top: 10px;
 }
 
-.btn {
-	padding: .7em;
-}
 
 
 
@@ -456,6 +375,10 @@ footer__bottom {
 	/* background: rgba(220,220,220, .4); */
 }
 
+
+
+
+
 /* ACTUAL CONTACT PAGE */
 .bg--image-1 {
 	background-image: url(../images/header-1.jpeg);
@@ -463,24 +386,6 @@ footer__bottom {
 	height: 50vh;
 	position: relative;
 }
-
-input,
-textarea,
-select {
-	outline: 0!important;
-	box-shadow: none!important;
-}
-
-input:hover,
-textarea:hover,
-input:focus,
-textarea:focus,
-input:active,
-textarea:active {
-    border: 1px solid #c5a15b!important;
-}
-
-
 
 textarea {
 	margin: 0 15px;
@@ -503,6 +408,11 @@ textarea {
 }
 
 
+.form-control:focus,
+textarea:focus {
+	outline: none!important;
+}
+
 /* GOOGLE MAP */
 #google-map {
 	position: relative;
@@ -520,13 +430,12 @@ textarea {
 }
 
 
+
 /* ================================ TEAM ============================= */
 
 .fadeIn {
 	animation: fadeIn 3s ease-in-out;
 }
-
-
 
 #myBtnContainer > button:hover {
 	background-color: #ddd;
@@ -671,10 +580,21 @@ textarea {
 /* ============================ CLASSES ===================== */
 
 
-/* TABLE  */
+/* CLASSES SPACING */
+#curriculum {
+	margin-top: 5em;
+}
+
 #schedule {
 	margin-top: 6em;
 }
+
+#coaches {
+	margin-top: 7em;
+}
+
+
+/* TABLE  */
 
 .table__heading {
 	background-color: #424242;
@@ -694,39 +614,47 @@ textarea {
 	font-weight: 700;
 }
 
+/* MODAL */
+.modal-content {
+	border-radius: 0!important;
+	background-color: #f2f2f2;
+}
 
 
-/* TESTOMINIAL */
+/* CAROUSEL */
+.carousel-inner .carousel-item {
+	transition: -webkit-transform 2s ease;
+	transition: transform 2s ease;
+	transition: transform 2s ease, -webkit-transform 2s ease;
+  }
+/* ================================VOICE===================== */
+
+
+/* CAROUSEL */
+/* SEE SIZE @ MEDIA QUERIES */
 .carousel-1 {
-	background: url(../images/coach-7.jpeg);
+	background: url(../images/voice-1.jpg);
 	background-size: cover;
-	width: 100%;	
-	height: 20em;
+	background-position-y: center;
 }
 
 .carousel-2 {
-	background: url(../images/coach-7.jpeg);
+	background: url(../images/voice-6.jpeg);
 	background-size: cover;
-	width: 100%;	
-	height: 20em;
+	background-position-y: center;
+	background-position-x: center;
 }
 
 .carousel-3 {
-	background: url(../images/coach-7.jpeg);
+	background: url(../images/voice-8.jpeg);
 	background-size: cover;
-	width: 100%;	
-	height: 20em;
+	background-position-x: center;
 }
 
-
-/* ================================VOICE===================== */
-
-/* HEADER BACKGROUND */
-.bg--image-3 {
-	background-image: url(../images/voice-6.jpeg);
+.carousel-4 {
+	background: url(../images/voice-4.jpeg);
 	background-size: cover;
-	height: 50vh;
-	position: relative;
+	background-position-x: center;
 	background-position-y: center;
 }
 
@@ -794,7 +722,6 @@ textarea {
 /*================================ FAQS ================================ */
 
 
-
 /* BACKGROUND */
 .bg--image-2 {
 	background-image: url(../images/header-7.jpeg);
@@ -828,19 +755,19 @@ textarea {
 	min-height: 0;
 	display: inline-block;
 	position: relative;
-	background-color: #fefffa;
+	background-color: #f2f2f3;
 	padding: 30px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 1px, 0.2);
   }
   
   .accordion__list-item > h4 {
 	display: block;
-	background-color: #fefffa;
+	background-color: #f2f2f3;
 	cursor: pointer;
   }
   
   .accordion__list-item > p {
-	color: rgba(48, 69, 92, 0.8);
+	color: #191919;
 	line-height: 26px;
 	letter-spacing: 1px;
 	position: relative;
@@ -865,8 +792,8 @@ textarea {
 	padding: 0;
 	margin: 0;
 	padding-bottom: 4px;
-	padding-top: 18px;
-	border-top: 1px dotted #dce7eb;
+	padding-top: 20px;
+	border-top: .5px dotted slategray;
   }
 
   .accordion__list-item:nth-of-type(1) {
@@ -974,14 +901,18 @@ textarea {
   }
 
 
-  
+  /* faqs-button */
 
+  .faqs-btn {
+	  margin-bottom: 7em;
+  }
 
 /* ================================ REUSABLE ============================ */
 
 .underline {
 	text-decoration: underline;
 }
+
 .hr-break {
 	border: .5px dashed #2b2b2b;
 }
@@ -1063,7 +994,6 @@ textarea {
 .text-small {
 	font-size: 13px!important;
 }
-
 
 
 .block {
@@ -1168,6 +1098,19 @@ textarea {
 	
 	}
 
+	/* CLASSES SPACING */
+	#curriculum {
+		margin-top: 7em;
+	}
+
+	#schedule {
+		margin-top: 6.5em;
+	}
+
+	#coaches {
+		margin-top: 10em;
+	}
+
 	/* HOMLE */
 	.home img[alt*="guitar"],
 	.home img[alt*="piano"],
@@ -1191,6 +1134,15 @@ textarea {
 	    text-decoration: none!important;
 	}
 
+	/* CLASS CAROUSEL SIZE */
+	.class-carousel {
+		width: 100%;	
+		height: 85vh;
+		padding: 0;
+	}
+
+
+
 
 	/* REUSABLE */
 	.vanish-lg {
@@ -1201,10 +1153,6 @@ textarea {
 		display: block;
 	}
 
-	.wrap {
-		background: rgba(220,220,220, .4);
-		display: block;
-	}
 
 	.break-lg {
 		display: block;
@@ -1232,6 +1180,31 @@ textarea {
 		font-size: 1.8rem;
 	}
 
+	/* BUTTONS */
+	a.btn.animated-button:focus,
+	a.btn.animated-button:active,{
+		border: #f2f2f2!important;
+		outline: none!important;
+		box-shadow: none!important;
+	} 
+
+	a.btn.animated-button:focus:before,
+	a.btn.animated-button:active:before {
+		border: #f2f2f2!important;
+		outline:none!important;
+		box-shadow: none!important;
+	} 
+
+	a.btn.animated-button:focus:after,
+	a.btn.animated-button:active:after {
+		border: #f2f2f2!important;
+		outline:none!important;
+		box-shadow: none!important;
+	} 
+	
+
+	
+
 	/* NAVBAR */
 
 	.navbar-nav {
@@ -1250,10 +1223,6 @@ textarea {
 		border: 0;
 	}
 
-	#header-button {
-		margin:	15px 0;
-	}
-
 	/* HEADER */
 	#header__top {
 		height: auto;
@@ -1268,6 +1237,8 @@ textarea {
 	#header__top .col:nth-child(3) {
 		display: none;
 	}
+
+
 
 	/*TEAM*/
 
@@ -1320,6 +1291,13 @@ textarea {
 
 
 
+	/* CLASS CAROUSEL SIZE */
+	.class-carousel {
+		width: 100%;	
+		height: 80vh;
+		padding:0;
+	}
+	
 
 	/* MAIN__CONTACT */
 		#main__contact  img[alt*="phone"],
@@ -1328,6 +1306,19 @@ textarea {
 			width: 30px;
 			height: 30px;
 			margin-top: 0;
+	}
+
+	#main__contact img[alt*="phone"] {
+		float: left;
+		margin-right: 30px;
+		overflow: hidden;
+	}
+
+	#main__contact img[alt*="address"] {
+		float: right;
+		margin-left: 30px;	
+		overflow: hidden;
+		
 	}
 
 
@@ -1373,9 +1364,6 @@ textarea {
 		font-size: 13px;
 	}
 
-	.wrap {
-		background: #f2f2f2;
-	}
 
 	.break-md {
 		display: block;
@@ -1403,6 +1391,30 @@ textarea {
 		font-size: 1.5rem;
 	}
 
+	/* BUTTONS */
+
+	a.btn.animated-button:focus,
+	a.btn.animated-button:active,{
+		border: #f2f2f2!important;
+		outline: none!important;
+		box-shadow: none!important;
+	} 
+
+	a.btn.animated-button:focus:before,
+	a.btn.animated-button:active:before {
+		border: #f2f2f2!important;
+		outline:none!important;
+		box-shadow: none!important;
+	} 
+
+	a.btn.animated-button:focus:after,
+	a.btn.animated-button:active:after {
+		border: #f2f2f2!important;
+		outline:none!important;
+		box-shadow: none!important;
+	} 
+	
+
 
 	/* HEADER TOP */
 	#header__top {
@@ -1424,9 +1436,6 @@ textarea {
 		display: none;
 	}
 
-	#header-button {
-		margin:	15px 0;
-	}
 
 	/* NAV */
 	#nav__collapse {
@@ -1471,6 +1480,30 @@ textarea {
 		margin-top: 0;
 	}
 
+	#main__contact img[alt*="phone"] {
+		float: left;
+		margin-right: 10px;
+		margin-left: 10px;
+		overflow: hidden;
+	}
+
+	#main__contact img[alt*="address"] {
+		float: right;
+		margin-left: 10px;	
+		margin-right: 10px
+		overflow: hidden;
+		
+	}
+
+
+
+	/* CLASS CAROUSEL SIZE */
+	.class-carousel {
+		width: 100%;	
+		height: 70vh;
+		padding: 0;
+	}
+	
 	
 	/*TEAM*/
 
