@@ -659,63 +659,138 @@ textarea:focus {
 }
 
 
-/* ================================STRING===================== */
+/* ================================GUITAR===================== */
 
-/* HEADER BACKGROUND */
-.bg--image-4 {
-	background-image: url(../images/string-4.jpeg);
+
+#guitar-carousel .carousel-1 {
+	background: url(../images/guitar-1.jpeg);
 	background-size: cover;
-	height: 50vh;
-	position: relative;
 	background-position-y: center;
+	background-position-x: center;
 }
 
+#guitar-carousel .carousel-2 {
+	background: url(../images/guitar-3.jpeg);
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: left;
+}
+
+#guitar-carousel .carousel-3 {
+	background: url(../images/string-9.jpeg);
+	background-size: cover;
+	background-position-x: center;
+}
+
+#guitar-carousel .carousel-4 {
+	background: url(../images/string-8.jpeg);
+	background-size: cover;
+	background-position-x: right;
+	background-position-y: center;
+}
 
 /* ==========================PIANO=========================== */
 
-/* HEADER BACKGROUND */
-.bg--image-5 {
-	background-image: url(../images/piano-1.jpeg);
+
+#piano-carousel .carousel-1 {
+	background: url(../images/piano-4.jpeg);
 	background-size: cover;
-	height: 50vh;
-	position: relative;
+	background-position-x: center;
 	background-position-y: center;
 }
 
+#piano-carousel .carousel-2 {
+	background: url(../images/piano-1.jpeg);
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: left;
+}
 
-/* ==========================PERCUSSION=========================== */
+#piano-carousel .carousel-3 {
+	background: url(../images/piano-5.jpeg);
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: left;
+}
 
-/* HEADER BACKGROUND */
-.bg--image-6 {
+
+
+
+/* ==========================DRUMS=========================== */
+
+#drums-carousel .carousel-1 {
+	background: url(../images/percussion-2.jpeg);
+	background-size: cover;
+	background-position-x: left;
+	background-position-y: top;
+}
+
+#drums-carousel .carousel-2 {
+	background: url(../images/percussion-4.jpeg);
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: center;
+}
+
+#drums-carousel .carousel-3 {
 	background-image: url(../images/percussion-6.jpeg);
 	background-size: cover;
-	height: 50vh;
-	position: relative;
 	background-position-y: center;
 }
 
 
-/* ==========================BRASS=========================== */
+/* ==========================SAXOPHONE=========================== */
 
-/* HEADER BACKGROUND */
-.bg--image-7 {
-	background-image: url(../images/brass-4.jpeg);
+#saxophone-carousel .carousel-1 {
+	background-image: url(../images/saxophone-3.jpeg);
 	background-size: cover;
-	height: 60vh;
-	position: relative;
 	background-position-y: bottom;
+	background-position-x: center;
 }
 
 
-/* ==========================TRADITIONAL=========================== */
-
-/* HEADER BACKGROUND */
-.bg--image-8 {
-	background-image: url(../images/traditional-2.jpeg);
+#saxophone-carousel .carousel-2 {
+	background: url(../images/saxophone-1.jpeg);
 	background-size: cover;
-	height: 60vh;
-	position: relative;
+	background-position-x: center;
 	background-position-y: center;
+}
+
+#saxophone-carousel .carousel-3 {
+	background: url(../images/saxophone-2.jpeg);
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: center;
+}
+
+
+
+
+
+
+/* ==========================VIOLIN=========================== */
+
+
+#violin-carousel .carousel-1 {
+	background-image: url(../images/string-4.jpeg);
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: right;
+}
+
+
+#violin-carousel .carousel-2 {
+	background: url(../images/string-3.jpeg);
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+#violin-carousel .carousel-3 {
+	background: url(../images/string-2.jpeg);
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: right;
 }
 
 
